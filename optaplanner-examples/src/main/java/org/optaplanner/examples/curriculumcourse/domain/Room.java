@@ -24,6 +24,24 @@ public class Room extends AbstractPersistable {
 
     private String code;
     private int capacity;
+    private int computers;
+    private boolean TEV;
+
+    public int getComputers() {
+        return computers;
+    }
+
+    public void setComputers(int computers) {
+        this.computers = computers;
+    }
+
+    public boolean isTEV() {
+        return TEV;
+    }
+
+    public void setTEV(boolean TEV) {
+        this.TEV = TEV;
+    }
 
     public String getCode() {
         return code;

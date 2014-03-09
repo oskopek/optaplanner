@@ -120,15 +120,17 @@ public class CurriculumCourseImporter extends AbstractTxtSolutionImporter {
             for (int i = 0; i < courseListSize; i++) {
                 Course course = new Course();
                 course.setId((long) i);
-                // Courses: <CourseID> <Teacher> <# Lectures> <MinWorkingDays> <# Students>
+                // Courses: <CourseID> <Teacher> <# Lectures> <MinWorkingDays> <# Students> <# Computers> <isTEV>
                 String line = bufferedReader.readLine();
-                String[] lineTokens = splitBySpacesOrTabs(line, 5);
+                String[] lineTokens = splitBySpacesOrTabs(line, 7);
                 course.setCode(lineTokens[0]);
                 course.setTeacher(findOrCreateTeacher(teacherMap, lineTokens[1]));
                 course.setLectureSize(Integer.parseInt(lineTokens[2]));
                 course.setMinWorkingDaySize(Integer.parseInt(lineTokens[3]));
                 course.setCurriculumList(new ArrayList<Curriculum>());
                 course.setStudentSize(Integer.parseInt(lineTokens[4]));
+                course.setComputers(Integer.parseInt(lineTokens[5]));
+                course.setTEV(Boolean.parseBoolean(lineTokens[6]));
                 courseList.add(course);
                 courseMap.put(course.getCode(), course);
             }
@@ -158,11 +160,13 @@ public class CurriculumCourseImporter extends AbstractTxtSolutionImporter {
             for (int i = 0; i < roomListSize; i++) {
                 Room room = new Room();
                 room.setId((long) i);
-                // Rooms: <RoomID> <Capacity>
+                // Rooms: <RoomID> <Capacity> <Computers> <isTEV>
                 String line = bufferedReader.readLine();
-                String[] lineTokens = splitBySpacesOrTabs(line, 2);
+                String[] lineTokens = splitBySpacesOrTabs(line, 4);
                 room.setCode(lineTokens[0]);
                 room.setCapacity(Integer.parseInt(lineTokens[1]));
+                room.setComputers(Integer.parseInt(lineTokens[2]));
+                room.setTEV(Boolean.parseBoolean(lineTokens[3]));
                 roomList.add(room);
             }
             schedule.setRoomList(roomList);
@@ -173,7 +177,7 @@ public class CurriculumCourseImporter extends AbstractTxtSolutionImporter {
             int periodListSize = dayListSize * timeslotListSize;
             Map<List<Integer>, Period> periodMap = new HashMap<List<Integer>, Period>(periodListSize);
             List<Day> dayList = new ArrayList<Day>(dayListSize);
-            for (int i = 0; i < dayListSize; i++) {
+            for (int i = 1; i <= dayListSize; i++) {
                 Day day = new Day();
                 day.setId((long) i);
                 day.setDayIndex(i);
@@ -182,7 +186,7 @@ public class CurriculumCourseImporter extends AbstractTxtSolutionImporter {
             }
             schedule.setDayList(dayList);
             List<Timeslot> timeslotList = new ArrayList<Timeslot>(timeslotListSize);
-            for (int i = 0; i < timeslotListSize; i++) {
+            for (int i = 1; i <= timeslotListSize; i++) {
                 Timeslot timeslot = new Timeslot();
                 timeslot.setId((long) i);
                 timeslot.setTimeslotIndex(i);

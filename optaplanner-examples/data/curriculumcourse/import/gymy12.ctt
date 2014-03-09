@@ -3,267 +3,293 @@ Courses: 216
 Rooms: 25
 Days: 5
 Periods_per_day: 7
-Curricula: 12
+Curricula: 38
 Constraints: 0
 
 COURSES:
-FYZ-1A Da 2 2 26
-ANJ-1A1 Mr 4 4 13
-ANJ-1A2 Ci 4 4 13
-FRJ-1A Ij 3 3 13
-NEJ-1A Sp 3 3 13
-TEV-1A1 Vs 2 2 13
-TEV-1A2 Ho 2 2 13
-DEJ-1A Br 2 2 26
-SJL-1A Kb 3 3 26
-MAT-1A Hv 4 4 26
-CHE-1A Mi 2 2 26
-UMK-1A Mo 1 1 26
-GEO-1A Vy 1 1 26
-BIO-1A Ed 2 2 26
-INF-1A1 Ba 2 1 9
-INF-1A2 Da 2 1 9
-INF-1A3 Dj 2 1 8
-CVC-1A Ba 1 1 26
-CVF-1A Da 1 1 26
-ETV-1B Mo 1 1 28
-ANJ-1B1 Chm 4 4 14
-ANJ-1B2 Chm 4 4 14
-ANJ-1B3 Hy 4 4 14
-ANJ-1B4 Sa 4 4 14
-ANJ-1B5 Mr 4 4 14
-ANJ-1B6 Mr 4 4 14
-NEJ-1B Sp 3 3 9
-FRJ-1B Ij 3 3 9
-ANJ-1B7 Mr 3 3 10
-ANJ-1B8 Ci 2 2 14
-ANJ-1B9 Sa 2 2 14
-TEV-1B1 Vs 3 3 14
-TEV-1B2 Ho 3 3 14
-SJL-1B Br 3 3 28
-MAT-1B Bm 2 2 28
-FYZ-2A Pj 2 2 28
-ANJ-2A1 Mr 4 4 14
-ANJ-2A2 Dl 4 4 14
-FRJ-2A Ij 3 3 14
-NEJ-2A Ho 3 3 14
-TEV-2A1 Vs 2 2 14
-TEV-2A2 Mo 2 2 14
-DEJ-2A Br 2 2 28
-SJL-2A Du 3 3 28
-MAT-2A Cr 4 4 28
-CHE-2A Cr 2 2 28
-UMK-2A Mo 1 1 28
-ETV-2A Mo 1 1 28
-GEO-2A Vy 2 2 28
-BIO-2A Hv 3 3 28
-INF-2A1 Kr 2 1 9
-INF-2A2 Dj 2 1 9
-INF-2A3 Dj 2 1 10
-CVF-2A Pj 1 1 28
-FYZ-2B Da 2 2 29
-ANJ-2B1 Ci 4 4 14
-ANJ-2B2 Hy 4 4 15
-FRJ-2B Ij 3 3 14
-NEJ-2B Sp 3 3 15
-TEV-2B1 Vs 2 2 14
-TEV-2B2 Ed 2 2 15
-DEJ-2B Br 2 2 29
-SJL-2B Du 3 3 29
-MAT-2B Gp 4 4 29
-CHE-2B Mi 2 2 29
-UMK-2B Dl 1 1 29
-ETV-2B Mo 1 1 29
-GEO-2B Vy 1 1 29
-BIO-2B Ci 1 1 29
-INF-2B1 Ba 2 1 9
-INF-2B2 Da 2 1 10
-INF-2B3 Dj 2 1 10
-CVF-2B Da 1 1 29
-OBN-2B Dl 1 1 29
-CVC-2B Pj 1 1 29
-CVB-2B Ci 1 1 29
-FYZ-3A Pj 2 2 31
-ANJ-3A1 Hy 4 4 15
-ANJ-3A2 Hy 3 3 16
-ANJ-3A2 Sa 4 4 15
-FRJ-3A Ij 3 3 16
-NEJ-3A1 Kb 4 4 15
-NEJ-3A2 Ho 3 3 16
-TEV-3A1 Vs 2 2 16
-TEV-3A2 Mo 2 2 15
-DEJ-3A Br 2 2 31
-SJL-3A Br 3 3 31
-MAT-3A Cr 4 4 31
-CHE-3A Cr 2 2 31
-UMK-3A Mo 2 2 31
-GEO-3A Vy 1 1 31
-BIO-3A Vy 2 2 31
-INF-3A1 Dj 2 1 16
-INF-3A2 Da 2 1 15
-CVF-3A Pj 1 1 31
-OBN-3A Ha 2 2 31
-SJL-4A Kb 3 3 31
-OBN-4A Ha 1 1 31
-TEV-4A1 Vs 2 2 16
-TEV-4A2 Mo 2 2 15
-ANJ-4A1 Sa 4 4 10
-ANJ-4A2 Sa 4 4 10
-ANJ-4A3 Hy 2 2 10
-FRJ-4A Ij 2 2 10
-NEJ-4A1 Kb 4 4 9
-NEJ-4A2 Kb 2 2 9
-SJL-okt Ha 3 3 20
-OBN-okt Ha 1 1 20
-TEV-okt Ed 2 2 20
-ANJ-okt1 Mr 4 4 10
-ANJ-okt2 Ci 4 4 10
-FRJ-okt Ij 2 2 10
-NEJ-okt Vs 2 2 10
-EKO-4Aokt Ge 2 1 15
-SEM-4Aokt Bp 2 1 15
-CVB1-4Aokt Ed 2 1 15
-CVB2-4Aokt Vy 2 1 15
-LIS1-4Aokt Du 2 1 15
-LIS2-4Aokt Du 2 1 15
-NOS-4Aokt Ha 4 3 15
-MAT-4Aokt Bp 4 3 15
-BIO1-4Aokt Hv 4 3 15
-BIO2-4Aokt Ed 4 3 15
-CHE-4Aokt Cr 4 3 15
-RNJ-4Aokt Kb 4 3 15
-RAJB2-4Aokt1 Sa 4 3 15
-RAJB2-4Aokt1 Hy 4 3 15
-SVS-4Aokt Ha 2 1 15
-SEC-4Aokt Cr 2 1 15
-CIF-4Aokt Kr 2 1 15
-SEF-4Aokt Da 2 1 15
-INF-4Aokt Kr 4 3 15
-DEJ-4Aokt Br 4 3 15
-NEJ-prima Sp 2 2 16
-ANJ-prima Cm 5 5 16
-SJL-prima Du 4 4 16
-FYZ-prima Bp 1 1 16
-MAT-prima Bp 4 4 16
-INF-prima1 Ba 1 1 8
-INF-prima2 Dj 1 1 8
-DEJ-prima Du 1 1 16
-GEO-prima Vy 2 2 16
-HUV-prima Ho 1 1 16
-BIO-prima Ed 1 1 16
-TEV-prima Ed 2 2 16
-ETV-prima Mo 1 1 16
-OBN-prima Ha 1 1 16
-VYV-prima Ed 1 1 16
-CHE-prima Mi 1 1 16
-NEJ-tercia1 Sp 2 2 20
-NEJ-tercia2 Sp 2 2 20
-ANJ-tercia1 Dl 5 5 10
-ANJ-tercia2 Ij 5 5 10
-SJL-tercia Ha 5 5 20
-FYZ-tercia Da 2 2 20
-MAT-tercia Hv 4 4 20
-INF-tercia1 Ba 1 1 10
-INF-tercia2 Da 1 1 10
-DEJ-tercia Br 1 1 20
-GEO-tercia Vy 1 1 20
-TECH-tercia Hv 1 1 20
-BIO-tercia Hv 1 1 20
-TEV-tercia Ho 3 3 20
-ETV-tercia Mo 1 1 20
-OBN-tercia Ha 1 1 20
-CHE-tercia Cr 1 1 20
-NEJ-kvinta1 Ho 3 3 11
-NEJ-kvinta2 Sp 3 3 11
-ANJ-kvinta1 Dl 4 4 11
-ANJ-kvinta2 Ci 4 4 11
-SJL-kvinta Du 3 3 22
-FYZ-kvinta Pj 2 2 22
-MAT-kvinta Hv 4 4 22
-INF-kvinta1 Ba 2 2 11
-INF-kvinta2 Da 2 2 11
-DEJ-kvinta Du 2 2 22
-GEO-kvinta Vy 1 1 22
-BIO-kvinta Ed 2 2 22
-TEV-kvinta Vs 2 2 22
-ETV-kvinta Mo 1 1 22
-CVC-kvinta Ba 1 1 22
-CVF-kvinta Pj 1 1 22
-CHE-kvinta Mi 2 2 22
-UMK-kvinta Mo 1 1 22
-NEJ-sexta1 Vs 3 3 8
-NEJ-sexta2 Sp 4 4 9
-ANJ-sexta1 Cm 4 4 8
-ANJ-sexta2 Mr 3 3 9
-SJL-sexta Br 3 3 17
-FYZ-sexta Pj 2 2 17
-MAT-sexta Bp 4 4 17
-INF-sexta1 Kr 2 1 8
-INF-sexta2 Da 2 1 9
-DEJ-sexta Du 2 2 17
-GEO-sexta Vy 2 2 17
-BIO-sexta Vy 2 2 17
-TEV-sexta Vs 2 2 17
-ETV-sexta Mo 1 1 17
-CVB-sexta Vy 1 1 17
-CVF-sexta Pj 1 1 17
-CHE-sexta Ba 2 2 17
-UMK-sexta Mo 1 1 17
-OBN-septima Ha 2 2 14
-NEJ-septima Ho 3 3 14
-ANJ-septima Dl 4 4 14
-SJL-septima Kb 3 3 14
-FYZ-septima Bp 2 2 14
-MAT-septima Bp 4 4 14
-INF-septima Dj 1 1 14
-DEJ-septima Br 2 2 14
-GEO-septima Vy 2 2 14
-BIO-septima Vy 2 2 14
-TEV-septima Ho 2 2 14
-CVF-septima Bp 1 1 14
-CHE-septima Pj 2 2 14
-UMK-septima Mo 1 1 14
+FYZ-1A Da 2 2 26 0 false
+ANJ-1A1 Mr 4 4 13 0 false
+ANJ-1A2 Ci 4 4 13 0 false
+FRJ-1A Ij 3 3 13 0 false
+NEJ-1A Sp 3 3 13 0 false
+TEV-1A1 Vs 2 2 13 0 true
+TEV-1A2 Ho 2 2 13 0 true
+DEJ-1A Br 2 2 26 0 false
+SJL-1A Kb 3 3 26 0 false
+MAT-1A Hv 4 4 26 0 false
+CHE-1A Mi 2 2 26 0 false
+UMK-1A Mo 1 1 26 0 false
+GEO-1A Vy 1 1 26 0 false
+BIO-1A Ed 2 2 26 0 false
+INF-1A1 Ba 2 1 9 9 false
+INF-1A2 Da 2 1 9 9 false
+INF-1A3 Dj 2 1 8 8 false
+CVC-1A Ba 1 1 26 0 false
+CVF-1A Da 1 1 26 0 false
+ETV-1B Mo 1 1 28 0 false
+ANJ-1B1 Chm 4 4 14 0 false
+ANJ-1B2 Chm 4 4 14 0 false
+ANJ-1B3 Hy 4 4 14 0 false
+ANJ-1B4 Sa 4 4 14 0 false
+ANJ-1B5 Mr 4 4 14 0 false
+ANJ-1B6 Mr 4 4 14 0 false
+NEJ-1B Sp 3 3 9 0 false
+FRJ-1B Ij 3 3 9 0 false
+ANJ-1B7 Mr 3 3 10 0 false
+ANJ-1B8 Ci 2 2 14 0 false
+ANJ-1B9 Sa 2 2 14 0 false
+TEV-1B1 Vs 3 3 14 0 true
+TEV-1B2 Ho 3 3 14 0 true
+SJL-1B Br 3 3 28 0 false
+MAT-1B Bm 2 2 28 0 false
+FYZ-2A Pj 2 2 28 0 false
+ANJ-2A1 Mr 4 4 14 0 false
+ANJ-2A2 Dl 4 4 14 0 false
+FRJ-2A Ij 3 3 14 0 false
+NEJ-2A Ho 3 3 14 0 false
+TEV-2A1 Vs 2 2 14 0 true
+TEV-2A2 Mo 2 2 14 0 true
+DEJ-2A Br 2 2 28 0 false
+SJL-2A Du 3 3 28 0 false
+MAT-2A Cr 4 4 28 0 false
+CHE-2A Cr 2 2 28 0 false
+UMK-2A Mo 1 1 28 0 false
+ETV-2A Mo 1 1 28 0 false
+GEO-2A Vy 2 2 28 0 false
+BIO-2A Hv 3 3 28 0 false
+INF-2A1 Kr 2 1 9 9 false
+INF-2A2 Dj 2 1 9 9 false
+INF-2A3 Dj 2 1 10 10 false
+CVF-2A Pj 1 1 28 0 false
+FYZ-2B Da 2 2 29 0 false
+ANJ-2B1 Ci 4 4 14 0 false
+ANJ-2B2 Hy 4 4 15 0 false
+FRJ-2B Ij 3 3 14 0 false
+NEJ-2B Sp 3 3 15 0 false
+TEV-2B1 Vs 2 2 14 0 true
+TEV-2B2 Ed 2 2 15 0 true
+DEJ-2B Br 2 2 29 0 false
+SJL-2B Du 3 3 29 0 false
+MAT-2B Gp 4 4 29 0 false
+CHE-2B Mi 2 2 29 0 false
+UMK-2B Dl 1 1 29 0 false
+ETV-2B Mo 1 1 29 0 false
+GEO-2B Vy 1 1 29 0 false
+BIO-2B Ci 1 1 29 0 false
+INF-2B1 Ba 2 1 9 9 false
+INF-2B2 Da 2 1 10 10 false
+INF-2B3 Dj 2 1 10 10 false
+CVF-2B Da 1 1 29 0 false
+OBN-2B Dl 1 1 29 0 false
+CVC-2B Pj 1 1 29 0 false
+CVB-2B Ci 1 1 29 0 false
+FYZ-3A Pj 2 2 31 0 false
+ANJ-3A1 Hy 4 4 15 0 false
+ANJ-3A2 Hy 3 3 16 0 false
+ANJ-3A3 Sa 4 4 15 0 false
+FRJ-3A Ij 3 3 16 0 false
+NEJ-3A1 Kb 4 4 15 0 false
+NEJ-3A2 Ho 3 3 16 0 false
+TEV-3A1 Vs 2 2 16 0 true
+TEV-3A2 Mo 2 2 15 0 true
+DEJ-3A Br 2 2 31 0 false
+SJL-3A Br 3 3 31 0 false
+MAT-3A Cr 4 4 31 0 false
+CHE-3A Cr 2 2 31 0 false
+UMK-3A Mo 2 2 31 0 false
+GEO-3A Vy 1 1 31 0 false
+BIO-3A Vy 2 2 31 0 false
+INF-3A1 Dj 2 1 16 16 false
+INF-3A2 Da 2 1 15 15 false
+CVF-3A Pj 1 1 31 0 false
+OBN-3A Ha 2 2 31 0 false
+SJL-4A Kb 3 3 31 0 false
+OBN-4A Ha 1 1 31 0 false
+TEV-4A1 Vs 2 2 16 0 true
+TEV-4A2 Mo 2 2 15 0 true
+ANJ-4A1 Sa 4 4 10 0 false
+ANJ-4A2 Sa 4 4 10 0 false
+ANJ-4A3 Hy 2 2 10 0 false
+FRJ-4A Ij 2 2 10 0 false
+NEJ-4A1 Kb 4 4 9 0 false
+NEJ-4A2 Kb 2 2 9 0 false
+SJL-okt Ha 3 3 20 0 false
+OBN-okt Ha 1 1 20 0 false
+TEV-okt Ed 2 2 20 0 true
+ANJ-okt1 Mr 4 4 10 0 false
+ANJ-okt2 Ci 4 4 10 0 false
+FRJ-okt Ij 2 2 10 0 false
+NEJ-okt Vs 2 2 10 0 false
+EKO-4Aokt Ge 2 1 15 0 false
+SEM-4Aokt Bp 2 1 15 0 false
+CVB1-4Aokt Ed 2 1 15 0 false
+CVB2-4Aokt Vy 2 1 15 0 false
+LIS1-4Aokt Du 2 1 15 0 false
+LIS2-4Aokt Du 2 1 15 0 false
+NOS-4Aokt Ha 4 3 15 0 false
+MAT-4Aokt Bp 4 3 15 0 false
+BIO1-4Aokt Hv 4 3 15 0 false
+BIO2-4Aokt Ed 4 3 15 0 false
+CHE-4Aokt Cr 4 3 15 0 false
+RNJ-4Aokt Kb 4 3 15 0 false
+RAJB2-4Aokt1 Sa 4 3 15 0 false
+RAJB2-4Aokt1 Hy 4 3 15 0 false
+SVS-4Aokt Ha 2 1 15 0 false
+SEC-4Aokt Cr 2 1 15 0 false
+CIF-4Aokt Kr 2 1 15 0 false
+SEF-4Aokt Da 2 1 15 0 false
+INF-4Aokt Kr 4 3 15 15 false
+DEJ-4Aokt Br 4 3 15 0 false
+NEJ-prima Sp 2 2 16 0 false
+ANJ-prima Cm 5 5 16 0 false
+SJL-prima Du 4 4 16 0 false
+FYZ-prima Bp 1 1 16 0 false
+MAT-prima Bp 4 4 16 0 false
+INF-prima1 Ba 1 1 8 8 false
+INF-prima2 Dj 1 1 8 8 false
+DEJ-prima Du 1 1 16 0 false
+GEO-prima Vy 2 2 16 0 false
+HUV-prima Ho 1 1 16 0 false
+BIO-prima Ed 1 1 16 0 false
+TEV-prima Ed 2 2 16 0 true
+ETV-prima Mo 1 1 16 0 false
+OBN-prima Ha 1 1 16 0 false
+VYV-prima Ed 1 1 16 0 false
+CHE-prima Mi 1 1 16 0 false
+NEJ-tercia1 Sp 2 2 20 0 false
+NEJ-tercia2 Sp 2 2 20 0 false
+ANJ-tercia1 Dl 5 5 10 0 false
+ANJ-tercia2 Ij 5 5 10 0 false
+SJL-tercia Ha 5 5 20 0 false
+FYZ-tercia Da 2 2 20 0 false
+MAT-tercia Hv 4 4 20 0 false
+INF-tercia1 Ba 1 1 10 10 false
+INF-tercia2 Da 1 1 10 10 false
+DEJ-tercia Br 1 1 20 0 false
+GEO-tercia Vy 1 1 20 0 false
+TECH-tercia Hv 1 1 20 0 false
+BIO-tercia Hv 1 1 20 0 false
+TEV-tercia Ho 3 3 20 0 true
+ETV-tercia Mo 1 1 20 0 false
+OBN-tercia Ha 1 1 20 0 false
+CHE-tercia Cr 1 1 20 0 false
+NEJ-kvinta1 Ho 3 3 11 0 false
+NEJ-kvinta2 Sp 3 3 11 0 false
+ANJ-kvinta1 Dl 4 4 11 0 false
+ANJ-kvinta2 Ci 4 4 11 0 false
+SJL-kvinta Du 3 3 22 0 false
+FYZ-kvinta Pj 2 2 22 0 false
+MAT-kvinta Hv 4 4 22 0 false
+INF-kvinta1 Ba 2 2 11 11 false
+INF-kvinta2 Da 2 2 11 11 false
+DEJ-kvinta Du 2 2 22 0 false
+GEO-kvinta Vy 1 1 22 0 false
+BIO-kvinta Ed 2 2 22 0 false
+TEV-kvinta Vs 2 2 22 0 true
+ETV-kvinta Mo 1 1 22 0 false
+CVC-kvinta Ba 1 1 22 0 false
+CVF-kvinta Pj 1 1 22 0 false
+CHE-kvinta Mi 2 2 22 0 false
+UMK-kvinta Mo 1 1 22 0 false
+NEJ-sexta1 Vs 3 3 8 0 false
+NEJ-sexta2 Sp 4 4 9 0 false
+ANJ-sexta1 Cm 4 4 8 0 false
+ANJ-sexta2 Mr 3 3 9 0 false
+SJL-sexta Br 3 3 17 0 false
+FYZ-sexta Pj 2 2 17 0 false
+MAT-sexta Bp 4 4 17 0 false
+INF-sexta1 Kr 2 1 8 8 false
+INF-sexta2 Da 2 1 9 9 false
+DEJ-sexta Du 2 2 17 0 false
+GEO-sexta Vy 2 2 17 0 false
+BIO-sexta Vy 2 2 17 0 false
+TEV-sexta Vs 2 2 17 0 true
+ETV-sexta Mo 1 1 17 0 false
+CVB-sexta Vy 1 1 17 0 false
+CVF-sexta Pj 1 1 17 0 false
+CHE-sexta Ba 2 2 17 0 false
+UMK-sexta Mo 1 1 17 0 false
+OBN-septima Ha 2 2 14 0 false
+NEJ-septima Ho 3 3 14 0 false
+ANJ-septima Dl 4 4 14 0 false
+SJL-septima Kb 3 3 14 0 false
+FYZ-septima Bp 2 2 14 0 false
+MAT-septima Bp 4 4 14 0 false
+INF-septima Dj 1 1 14 14 false
+DEJ-septima Br 2 2 14 0 false
+GEO-septima Vy 2 2 14 0 false
+BIO-septima Vy 2 2 14 0 false
+TEV-septima Ho 2 2 14 0 true
+CVF-septima Bp 1 1 14 0 false
+CHE-septima Pj 2 2 14 0 false
+UMK-septima Mo 1 1 14 0 false
 
 ROOMS:
-prima   24
-tercia  26
-kvinta  24
-sexta   24
-septima 24
-oktava  32
-1A  32
-1B  32
-2A  40
-2B  40
-3A  28
-4A  40
-mu  26
-mu2 30
-mu3 30
-vt1 16
-vt2 12
-bl  24
-chl 24
-fu  28
-jl  16
-ju  16
-tl1 20
-tl2 20
-r41 30
+prima   24 0 false
+tercia  26 0 false
+kvinta  24 0 false
+sexta   24 0 false
+septima 24 0 false
+oktava  32 0 false
+1A  32 0 false
+1B  32 0 false
+2A  40 0 false
+2B  40 0 false
+3A  28 0 false
+4A  40 0 false
+mu  26 15 false
+mu2 30 1 false
+mu3 30 1 false
+vt1 16 16 false
+vt2 15 15 false
+bl  24 1 false
+chl 24 0 false
+fu  28 1 false
+jl  16 7 false
+ju  16 7 false
+tl1 30 0 true
+tl2 30 0 true
+r41 30 0 false
 
 CURRICULA:
-1A  19 FYZ-1A ANJ-1A1 ANJ-1A2 FRJ-1A NEJ-1A TEV-1A1 TEV-1A2 DEJ-1A SJL-1A MAT-1A CHE-1A UMK-1A GEO-1A BIO-1A INF-1A1 INF-1A2 INF-1A3 CVC-1A CVF-1A
-1B  16 ETV-1B ANJ-1B1 ANJ-1B2 ANJ-1B3 ANJ-1B4 ANJ-1B5 ANJ-1B6 NEJ-1B FRJ-1B ANJ-1B7 ANJ-1B8 ANJ-1B9 TEV-1B1 TEV-1B2 SJL-1B MAT-1B
-2A  19 FYZ-2A ANJ-2A1 ANJ-2A2 FRJ-2A NEJ-2A TEV-2A1 TEV-2A2 DEJ-2A SJL-2A MAT-2A CHE-2A UMK-2A ETV-2A GEO-2A BIO-2A INF-2A1 INF-2A2 INF-2A3 CVF-2A
-2B  22 FYZ-2B ANJ-2B1 ANJ-2B2 FRJ-2B NEJ-2B TEV-2B1 TEV-2B2 DEJ-2B SJL-2B MAT-2B CHE-2B UMK-2B ETV-2B GEO-2B BIO-2B INF-2B1 INF-2B2 INF-2B3 CVF-2B OBN-2B CVC-2B CVB-2B
-3A  20 FYZ-3A ANJ-3A1 ANJ-3A2 ANJ-3A2 FRJ-3A NEJ-3A1 NEJ-3A2 TEV-3A1 TEV-3A2 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A1 INF-3A2 CVF-3A OBN-3A
-4A  30 SJL-4A OBN-4A TEV-4A1 TEV-4A2 ANJ-4A1 ANJ-4A2 ANJ-4A3 FRJ-4A NEJ-4A1 NEJ-4A2 EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+1A-1  14 FYZ-1A ANJ-1A1 FRJ-1A TEV-1A1 DEJ-1A SJL-1A MAT-1A CHE-1A UMK-1A GEO-1A BIO-1A INF-1A1 CVC-1A CVF-1A
+1A-2  14 FYZ-1A ANJ-1A2 FRJ-1A TEV-1A2 DEJ-1A SJL-1A MAT-1A CHE-1A UMK-1A GEO-1A BIO-1A INF-1A2 CVC-1A CVF-1A
+1A-3  14 FYZ-1A ANJ-1A1 NEJ-1A TEV-1A1 DEJ-1A SJL-1A MAT-1A CHE-1A UMK-1A GEO-1A BIO-1A INF-1A3 CVC-1A CVF-1A
+1A-4  14 FYZ-1A ANJ-1A2 NEJ-1A TEV-1A2 DEJ-1A SJL-1A MAT-1A CHE-1A UMK-1A GEO-1A BIO-1A INF-1A3 CVC-1A CVF-1A
+1B-1  10 ETV-1B ANJ-1B1 ANJ-1B3 ANJ-1B5 NEJ-1B ANJ-1B7 ANJ-1B8 TEV-1B1 SJL-1B MAT-1B
+1B-2  10 ETV-1B ANJ-1B2 ANJ-1B4 ANJ-1B6 FRJ-1B ANJ-1B7 ANJ-1B9 TEV-1B2 SJL-1B MAT-1B
+2A-1  14 FYZ-2A ANJ-2A1 FRJ-2A TEV-2A1 DEJ-2A SJL-2A MAT-2A CHE-2A UMK-2A ETV-2A GEO-2A BIO-2A INF-2A1 CVF-2A
+2A-2  14 FYZ-2A ANJ-2A1 NEJ-2A TEV-2A1 DEJ-2A SJL-2A MAT-2A CHE-2A UMK-2A ETV-2A GEO-2A BIO-2A INF-2A2 CVF-2A
+2A-3  14 FYZ-2A ANJ-2A2 FRJ-2A TEV-2A2 DEJ-2A SJL-2A MAT-2A CHE-2A UMK-2A ETV-2A GEO-2A BIO-2A INF-2A3 CVF-2A
+2A-4  14 FYZ-2A ANJ-2A2 NEJ-2A TEV-2A2 DEJ-2A SJL-2A MAT-2A CHE-2A UMK-2A ETV-2A GEO-2A BIO-2A INF-2A3 CVF-2A
+2B-1  17 FYZ-2B ANJ-2B1 FRJ-2B TEV-2B1 DEJ-2B SJL-2B MAT-2B CHE-2B UMK-2B ETV-2B GEO-2B BIO-2B INF-2B1 CVF-2B OBN-2B CVC-2B CVB-2B
+2B-2  17 FYZ-2B ANJ-2B1 NEJ-2B TEV-2B1 DEJ-2B SJL-2B MAT-2B CHE-2B UMK-2B ETV-2B GEO-2B BIO-2B INF-2B2 CVF-2B OBN-2B CVC-2B CVB-2B
+2B-3  17 FYZ-2B ANJ-2B2 FRJ-2B TEV-2B2 DEJ-2B SJL-2B MAT-2B CHE-2B UMK-2B ETV-2B GEO-2B BIO-2B INF-2B3 CVF-2B OBN-2B CVC-2B CVB-2B
+2B-4  17 FYZ-2B ANJ-2B2 NEJ-2B TEV-2B2 DEJ-2B SJL-2B MAT-2B CHE-2B UMK-2B ETV-2B GEO-2B BIO-2B INF-2B3 CVF-2B OBN-2B CVC-2B CVB-2B
+3A-1  14 FYZ-3A ANJ-3A1 FRJ-3A TEV-3A1 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A1 CVF-3A OBN-3A
+3A-2  14 FYZ-3A ANJ-3A1 NEJ-3A2 TEV-3A1 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A1 CVF-3A OBN-3A
+3A-3  14 FYZ-3A ANJ-3A3 FRJ-3A TEV-3A1 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A1 CVF-3A OBN-3A
+3A-4  14 FYZ-3A ANJ-3A3 NEJ-3A2 TEV-3A2 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A2 CVF-3A OBN-3A
+3A-5  14 FYZ-3A ANJ-3A2 NEJ-3A1 TEV-3A2 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A2 CVF-3A OBN-3A
+3A-6  14 FYZ-3A FRJ-3A NEJ-3A1 TEV-3A2 DEJ-3A SJL-3A MAT-3A CHE-3A UMK-3A GEO-3A BIO-3A INF-3A2 CVF-3A OBN-3A
+4A-1  25 SJL-4A OBN-4A TEV-4A1 ANJ-4A1 FRJ-4A EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+4A-2  25 SJL-4A OBN-4A TEV-4A1 ANJ-4A1 NEJ-4A2 EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+4A-3  25 SJL-4A OBN-4A TEV-4A1 ANJ-4A2 FRJ-4A EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+4A-4  25 SJL-4A OBN-4A TEV-4A2 ANJ-4A2 NEJ-4A2 EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+4A-5  25 SJL-4A OBN-4A TEV-4A2 FRJ-4A NEJ-4A1 EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+4A-6  25 SJL-4A OBN-4A TEV-4A2 ANJ-4A3 NEJ-4A1 EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
 prima  16 NEJ-prima ANJ-prima SJL-prima FYZ-prima MAT-prima INF-prima1 INF-prima2 DEJ-prima GEO-prima HUV-prima BIO-prima TEV-prima ETV-prima OBN-prima VYV-prima CHE-prima
-tercia  17 NEJ-tercia1 NEJ-tercia2 ANJ-tercia1 ANJ-tercia2 SJL-tercia FYZ-tercia MAT-tercia INF-tercia1 INF-tercia2 DEJ-tercia GEO-tercia TECH-tercia BIO-tercia TEV-tercia ETV-tercia OBN-tercia CHE-tercia
-kvinta  18 NEJ-kvinta1 NEJ-kvinta2 ANJ-kvinta1 ANJ-kvinta2 SJL-kvinta FYZ-kvinta MAT-kvinta INF-kvinta1 INF-kvinta2 DEJ-kvinta GEO-kvinta BIO-kvinta TEV-kvinta ETV-kvinta CVC-kvinta CVF-kvinta CHE-kvinta UMK-kvinta
-sexta  18 NEJ-sexta1 NEJ-sexta2 ANJ-sexta1 ANJ-sexta2 SJL-sexta FYZ-sexta MAT-sexta INF-sexta1 INF-sexta2 DEJ-sexta GEO-sexta BIO-sexta TEV-sexta ETV-sexta CVB-sexta CVF-sexta CHE-sexta UMK-sexta
+tercia-1  14 NEJ-tercia1 ANJ-tercia1 SJL-tercia FYZ-tercia MAT-tercia INF-tercia1 DEJ-tercia GEO-tercia TECH-tercia BIO-tercia TEV-tercia ETV-tercia OBN-tercia CHE-tercia
+tercia-2  14 NEJ-tercia2 ANJ-tercia2 SJL-tercia FYZ-tercia MAT-tercia INF-tercia2 DEJ-tercia GEO-tercia TECH-tercia BIO-tercia TEV-tercia ETV-tercia OBN-tercia CHE-tercia
+kvinta-1  15 NEJ-kvinta1 ANJ-kvinta1 SJL-kvinta FYZ-kvinta MAT-kvinta INF-kvinta1 DEJ-kvinta GEO-kvinta BIO-kvinta TEV-kvinta ETV-kvinta CVC-kvinta CVF-kvinta CHE-kvinta UMK-kvinta
+kvinta-2  15 NEJ-kvinta2 ANJ-kvinta2 SJL-kvinta FYZ-kvinta MAT-kvinta INF-kvinta2 DEJ-kvinta GEO-kvinta BIO-kvinta TEV-kvinta ETV-kvinta CVC-kvinta CVF-kvinta CHE-kvinta UMK-kvinta
+sexta-1  15 NEJ-sexta1 ANJ-sexta1 SJL-sexta FYZ-sexta MAT-sexta INF-sexta1 DEJ-sexta GEO-sexta BIO-sexta TEV-sexta ETV-sexta CVB-sexta CVF-sexta CHE-sexta UMK-sexta
+sexta-2  15 NEJ-sexta2 ANJ-sexta2 SJL-sexta FYZ-sexta MAT-sexta INF-sexta2 DEJ-sexta GEO-sexta BIO-sexta TEV-sexta ETV-sexta CVB-sexta CVF-sexta CHE-sexta UMK-sexta
 septima  14 OBN-septima NEJ-septima ANJ-septima SJL-septima FYZ-septima MAT-septima INF-septima DEJ-septima GEO-septima BIO-septima TEV-septima CVF-septima CHE-septima UMK-septima
-okt  27 SJL-okt OBN-okt TEV-okt ANJ-okt1 ANJ-okt2 FRJ-okt NEJ-okt EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+okt-1  25 SJL-okt OBN-okt TEV-okt ANJ-okt1 FRJ-okt EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+okt-2  25 SJL-okt OBN-okt TEV-okt ANJ-okt1 NEJ-okt EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+okt-3  25 SJL-okt OBN-okt TEV-okt ANJ-okt2 FRJ-okt EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
+okt-4  25 SJL-okt OBN-okt TEV-okt ANJ-okt2 NEJ-okt EKO-4Aokt SEM-4Aokt CVB1-4Aokt CVB2-4Aokt LIS1-4Aokt LIS2-4Aokt NOS-4Aokt MAT-4Aokt BIO1-4Aokt BIO2-4Aokt CHE-4Aokt RNJ-4Aokt RAJB2-4Aokt1 RAJB2-4Aokt1 SVS-4Aokt SEC-4Aokt CIF-4Aokt SEF-4Aokt INF-4Aokt DEJ-4Aokt
 
 UNAVAILABILITY_CONSTRAINTS:
 

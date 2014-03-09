@@ -47,7 +47,7 @@ public class Day extends AbstractPersistable {
     }
 
     public String getLabel() {
-        return dayIndex + " " + WEEKDAYS[dayIndex % WEEKDAYS.length];
+        return dayIndex + " " + WEEKDAYS[(dayIndex-1) % WEEKDAYS.length];
     }
 
     @Override

@@ -48,7 +48,7 @@ rule "conflictingLecturesDifferentCourseInSamePeriod"
         $leftLecture : Lecture(course == $leftCourse, $period : period, period != null)
         $rightLecture : Lecture(course == $rightCourse, period == $period, this != $leftLecture)
     then
-        scoreHolder.addHardConstraintMatch(kcontext, - $courseConflict.getConflictCount());
+        scoreHolder.addSoftConstraintMatch(kcontext, - $courseConflict.getConflictCount());
 end
 rule "conflictingLecturesSameCourseInSamePeriod"
     when
@@ -68,21 +68,8 @@ rule "roomOccupancy"
         // rightLecture has the same period
         $rightLecture : Lecture(period == $period, room == $room, id > $leftId, $rightId : id)
     then
-        scoreHolder.addHardConstraintMatch(kcontext, -1);
-end
-
-// Availabilities: Each lecture in a period unavailable for that course.
-rule "unavailablePeriodPenalty"
-    when
-        $unavailablePeriodPenalty : UnavailablePeriodPenalty($course : course, $period : period)
-        $lecture : Lecture(course == $course, period == $period)
-    then
         scoreHolder.addHardConstraintMatch(kcontext, -10);
 end
-
-// ############################################################################
-// Soft constraints
-// ############################################################################
 
 // RoomCapacity: For each lecture, the number of students that attend the course should be less or equal
 // than the number of seats of all the rooms that host its lectures.
@@ -92,7 +79,7 @@ rule "roomCapacity"
         $room : Room($capacity : capacity)
         $lecture : Lecture(room == $room, studentSize > $capacity, $studentSize : studentSize)
     then
-        scoreHolder.addSoftConstraintMatch(kcontext, ($capacity - $studentSize));
+        scoreHolder.addHardConstraintMatch(kcontext, ($capacity - $studentSize)*10);
 end
 
 // MinimumWorkingDays: The lectures of each course should be spread into a minimum number of days.
@@ -108,7 +95,7 @@ rule "minimumWorkingDays"
         // An uninitialized schedule should have no constraints broken
         exists Lecture(course == $course, period != null)
     then
-        scoreHolder.addSoftConstraintMatch(kcontext, (($dayCount.intValue() - $minWorkingDaySize) * 5));
+        scoreHolder.addHardConstraintMatch(kcontext, (($dayCount.intValue() - $minWorkingDaySize) * 5));
 end
 
 // CurriculumCompactness: Lectures belonging to a curriculum should be adjacent
@@ -130,19 +117,34 @@ rule "curriculumCompactness"
             day == $day, timeslotIndex == ($timeslotIndex + 1)
         )
     then
-        scoreHolder.addSoftConstraintMatch(kcontext, -2);
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
 end
 
-// RoomStability: All lectures of a course should be given in the same room.
-// Each distinct room used for the lectures of a course, but the first, counts as 1 point of penalty.
-rule "roomStability"
+rule "lessComputersThanNeeded"
     when
-        $course : Course()
-        $roomCount : Number(intValue > 1) from accumulate(
-            $room : Room()
-            and exists Lecture(course == $course, room == $room),
-            count($room)
-        )
+        $room : Room($computersAvail : computers)
+        $lecture : Lecture(course != null, room == $room, $computersNeeded : course.computers, $computersNeeded > $computersAvail)
     then
-        scoreHolder.addSoftConstraintMatch(kcontext, -($roomCount.intValue() - 1));
+        scoreHolder.addHardConstraintMatch(kcontext, -1*($computersNeeded - $computersAvail));
 end
+
+rule "PENotInTelocvicna"
+    when
+        $room : Room(!TEV)
+        $lecture : Lecture(course != null, room == $room, course.TEV)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+rule "OtherInTelocvicna"
+    when
+        $room : Room(TEV)
+        $lecture : Lecture(course != null, room == $room, !course.TEV)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+// ############################################################################
+// Soft constraints
+// ############################################################################
+
