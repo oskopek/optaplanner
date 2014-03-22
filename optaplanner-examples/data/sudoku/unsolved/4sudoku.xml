@@ -1,0 +1,190 @@
+<Sudoku id="1">
+  <id>0</id>
+  <n>4</n>
+  <columnList id="2">
+    <Column id="3">
+      <id>0</id>
+      <index>0</index>
+    </Column>
+    <Column id="4">
+      <id>1</id>
+      <index>1</index>
+    </Column>
+    <Column id="5">
+      <id>2</id>
+      <index>2</index>
+    </Column>
+    <Column id="6">
+      <id>3</id>
+      <index>3</index>
+    </Column>
+  </columnList>
+  <rowList id="7">
+    <Row id="8">
+      <id>0</id>
+      <index>0</index>
+    </Row>
+    <Row id="9">
+      <id>1</id>
+      <index>1</index>
+    </Row>
+    <Row id="10">
+      <id>2</id>
+      <index>2</index>
+    </Row>
+    <Row id="11">
+      <id>3</id>
+      <index>3</index>
+    </Row>
+  </rowList>
+  <numberList id="12">
+    <Number id="13">
+      <id>1</id>
+      <value>1</value>
+    </Number>
+    <Number id="14">
+      <id>2</id>
+      <value>2</value>
+    </Number>
+    <Number id="15">
+      <id>3</id>
+      <value>3</value>
+    </Number>
+    <Number id="16">
+      <id>4</id>
+      <value>4</value>
+    </Number>
+  </numberList>
+  <squareList id="17">
+    <Square id="18">
+      <id>0</id>
+      <index>0</index>
+    </Square>
+    <Square id="19">
+      <id>1</id>
+      <index>1</index>
+    </Square>
+    <Square id="20">
+      <id>2</id>
+      <index>2</index>
+    </Square>
+    <Square id="21">
+      <id>3</id>
+      <index>3</index>
+    </Square>
+  </squareList>
+  <sudokuNumberList id="22">
+    <SudokuNumber id="23">
+      <id>0</id>
+      <column reference="3"/>
+      <square reference="18"/>
+      <number reference="13"/>
+      <row reference="8"/>
+    </SudokuNumber>
+    <SudokuNumber id="24">
+      <id>1</id>
+      <column reference="4"/>
+      <square reference="18"/>
+      <number reference="13"/>
+      <row reference="8"/>
+    </SudokuNumber>
+    <SudokuNumber id="25">
+      <id>2</id>
+      <column reference="5"/>
+      <square reference="19"/>
+      <number reference="13"/>
+      <row reference="8"/>
+    </SudokuNumber>
+    <SudokuNumber id="26">
+      <id>3</id>
+      <column reference="6"/>
+      <square reference="19"/>
+      <number reference="13"/>
+      <row reference="8"/>
+    </SudokuNumber>
+    <SudokuNumber id="27">
+      <id>4</id>
+      <column reference="3"/>
+      <square reference="18"/>
+      <number reference="14"/>
+      <row reference="9"/>
+    </SudokuNumber>
+    <SudokuNumber id="28">
+      <id>5</id>
+      <column reference="4"/>
+      <square reference="18"/>
+      <number reference="14"/>
+      <row reference="9"/>
+    </SudokuNumber>
+    <SudokuNumber id="29">
+      <id>6</id>
+      <column reference="5"/>
+      <square reference="19"/>
+      <number reference="14"/>
+      <row reference="9"/>
+    </SudokuNumber>
+    <SudokuNumber id="30">
+      <id>7</id>
+      <column reference="6"/>
+      <square reference="19"/>
+      <number reference="14"/>
+      <row reference="9"/>
+    </SudokuNumber>
+    <SudokuNumber id="31">
+      <id>8</id>
+      <column reference="3"/>
+      <square reference="20"/>
+      <number reference="15"/>
+      <row reference="10"/>
+    </SudokuNumber>
+    <SudokuNumber id="32">
+      <id>9</id>
+      <column reference="4"/>
+      <square reference="20"/>
+      <number reference="15"/>
+      <row reference="10"/>
+    </SudokuNumber>
+    <SudokuNumber id="33">
+      <id>10</id>
+      <column reference="5"/>
+      <square reference="21"/>
+      <number reference="15"/>
+      <row reference="10"/>
+    </SudokuNumber>
+    <SudokuNumber id="34">
+      <id>11</id>
+      <column reference="6"/>
+      <square reference="21"/>
+      <number reference="15"/>
+      <row reference="10"/>
+    </SudokuNumber>
+    <SudokuNumber id="35">
+      <id>12</id>
+      <column reference="3"/>
+      <square reference="20"/>
+      <number reference="16"/>
+      <row reference="11"/>
+    </SudokuNumber>
+    <SudokuNumber id="36">
+      <id>13</id>
+      <column reference="4"/>
+      <square reference="20"/>
+      <number reference="16"/>
+      <row reference="11"/>
+    </SudokuNumber>
+    <SudokuNumber id="37">
+      <id>14</id>
+      <column reference="5"/>
+      <square reference="21"/>
+      <number reference="16"/>
+      <row reference="11"/>
+    </SudokuNumber>
+    <SudokuNumber id="38">
+      <id>15</id>
+      <column reference="6"/>
+      <square reference="21"/>
+      <number reference="16"/>
+      <row reference="11"/>
+    </SudokuNumber>
+  </sudokuNumberList>
+</Sudoku>

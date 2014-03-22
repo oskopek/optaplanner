@@ -45,7 +45,7 @@ import org.optaplanner.examples.curriculumcourse.app.CurriculumCourseApp;
 import org.optaplanner.examples.examination.app.ExaminationApp;
 import org.optaplanner.examples.machinereassignment.app.MachineReassignmentApp;
 import org.optaplanner.examples.manners2009.app.Manners2009App;
-import org.optaplanner.examples.nqueens.app.NQueensApp;
+import org.optaplanner.examples.sudoku.app.SudokuApp;
 import org.optaplanner.examples.nurserostering.app.NurseRosteringApp;
 import org.optaplanner.examples.pas.app.PatientAdmissionScheduleApp;
 import org.optaplanner.examples.projectjobscheduling.app.ProjectJobSchedulingApp;
@@ -114,11 +114,12 @@ public class OptaPlannerExamplesApp extends JFrame {
         titledBorder.setTitleColor(TangoColorFactory.CHAMELEON_3);
         panel.setBorder(BorderFactory.createCompoundBorder(titledBorder,
                 BorderFactory.createEmptyBorder(5, 5, 5, 5)));
-        panel.add(createExampleButton(new NQueensApp()));
+        panel.add(createExampleButton(new SudokuApp()));
         panel.add(createExampleButton(new CloudBalancingApp()));
         panel.add(createExampleButton(new TspApp()));
         panel.add(createExampleButton(new Manners2009App()));
         panel.add(createExampleButton(new TennisApp()));
+        panel.add(createExampleButton(new org.optaplanner.examples.sudoku.app.SudokuApp()));
         return panel;
     }
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+  <benchmarkDirectory>local/data/sudoku/scoreDirector</benchmarkDirectory>
+  <warmUpSecondsSpentLimit>30</warmUpSecondsSpentLimit>
+
+  <inheritedSolverBenchmark>
+    <problemBenchmarks>
+      <xstreamAnnotatedClass>org.optaplanner.examples.sudoku.domain.Sudoku</xstreamAnnotatedClass>
+      <inputSolutionFile>data/sudoku/unsolved/36sudoku.xml</inputSolutionFile>
+      <inputSolutionFile>data/sudoku/unsolved/49sudoku.xml</inputSolutionFile>
+      <inputSolutionFile>data/sudoku/unsolved/64sudoku.xml</inputSolutionFile>
+      <problemStatisticType>BEST_SCORE</problemStatisticType>
+    </problemBenchmarks>
+    <solver>
+      <solutionClass>org.optaplanner.examples.sudoku.domain.Sudoku</solutionClass>
+      <planningEntityClass>org.optaplanner.examples.sudoku.domain.SudokuNumber</planningEntityClass>
+      <scoreDirectorFactory>
+        <scoreDefinitionType>SIMPLE</scoreDefinitionType>
+        <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+      </scoreDirectorFactory>
+      <termination>
+        <bestScoreLimit>0</bestScoreLimit>
+      </termination>
+      <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+      </constructionHeuristic>
+      <localSearch>
+        <changeMoveSelector>
+          <selectionOrder>ORIGINAL</selectionOrder>
+        </changeMoveSelector>
+        <acceptor>
+          <entityTabuSize>5</entityTabuSize>
+        </acceptor>
+        <forager>
+        </forager>
+      </localSearch>
+    </solver>
+  </inheritedSolverBenchmark>
+
+  <solverBenchmark>
+    <name>TS with Simple Java</name>
+    <solver>
+      <scoreDirectorFactory>
+        <simpleScoreCalculatorClass>org.optaplanner.examples.sudoku.solver.score.SudokuSimpleScoreCalculator</simpleScoreCalculatorClass>
+      </scoreDirectorFactory>
+    </solver>
+  </solverBenchmark>
+  <solverBenchmark>
+    <name>TS with Basic Incremental Java</name>
+    <solver>
+      <scoreDirectorFactory>
+        <incrementalScoreCalculatorClass>org.optaplanner.examples.sudoku.solver.score.SudokuBasicIncrementalScoreCalculator</incrementalScoreCalculatorClass>
+      </scoreDirectorFactory>
+    </solver>
+  </solverBenchmark>
+  <solverBenchmark>
+    <name>TS with Advanced Incremental Java</name>
+    <solver>
+      <scoreDirectorFactory>
+        <incrementalScoreCalculatorClass>org.optaplanner.examples.sudoku.solver.score.SudokuAdvancedIncrementalScoreCalculator</incrementalScoreCalculatorClass>
+      </scoreDirectorFactory>
+    </solver>
+  </solverBenchmark>
+  <solverBenchmark>
+    <name>TS with Drools</name>
+    <solver>
+      <scoreDirectorFactory>
+        <scoreDrl>/org/optaplanner/examples/sudoku/solver/sudokuScoreRules.drl</scoreDrl>
+      </scoreDirectorFactory>
+    </solver>
+  </solverBenchmark>
+</plannerBenchmark>

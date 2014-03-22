@@ -26,6 +26,7 @@ import org.optaplanner.examples.nqueens.persistence.NQueensGenerator;
 import org.optaplanner.examples.nurserostering.persistence.NurseRosteringImporter;
 import org.optaplanner.examples.pas.persistence.PatientAdmissionScheduleImporter;
 import org.optaplanner.examples.projectjobscheduling.persistence.ProjectJobSchedulingImporter;
+import org.optaplanner.examples.sudoku.persistence.SudokuGenerator;
 import org.optaplanner.examples.travelingtournament.persistence.TravelingTournamentImporter;
 import org.optaplanner.examples.tsp.persistence.TspImporter;
 import org.optaplanner.examples.vehiclerouting.persistence.VehicleRoutingImporter;
@@ -38,6 +39,7 @@ public class AllExamplesSolutionImporter extends LoggingMain {
 
     public void importAll() {
         NQueensGenerator.main(new String[0]);
+        SudokuGenerator.main(new String[0]);
         CloudBalancingGenerator.main(new String[0]);
         TspImporter.main(new String[0]);
         Manners2009Importer.main(new String[0]);
