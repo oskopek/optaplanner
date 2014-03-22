@@ -22,7 +22,6 @@ import org.optaplanner.examples.common.swingui.TangoColorFactory;
 import org.optaplanner.examples.sudoku.domain.*;
 
 import javax.swing.*;
-import javax.swing.border.MatteBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
@@ -53,27 +52,33 @@ public class SudokuPanel extends SolutionPanel {
             add(tooBigToShowLabel);
             return;
         }
-        List<SudokuNumber> sudokuNumberList = sudoku.getSudokuNumberList();
+        List<Figure> figureList = sudoku.getFigureList();
         setLayout(new GridLayout(n, n));
         int sudokuNumberId = 0;
         for (int row = 0; row < n; row++) {
             for (int column = 0; column < n; column++) {
-                SudokuNumber sudokuNumber = sudokuNumberList.get(sudokuNumberId);
+                Figure figure = figureList.get(sudokuNumberId);
                 sudokuNumberId++;
-                org.optaplanner.examples.sudoku.domain.Number value = sudokuNumber.getNumber();
-                if (sudokuNumber.getColumnIndex() != column || sudokuNumber.getRowIndex() != row) {
-                    logger.warn("SudokuNumber expected row{}, col{}, sq{}. Got row{}, col{}, sq{}",
-                            row, column, sudokuNumber.getSquareIndex(), sudokuNumber.getRowIndex(), sudokuNumber.getColumnIndex(), sudokuNumber.getSquareIndex());
-                    throw new IllegalStateException("The sudokuNumberList is not in the expected order.");
+                Value value = figure.getValue();
+                if (figure.getColumnIndex() != column || figure.getRowIndex() != row) {
+                    logger.warn("Figure expected row{}, col{}, sq{}. Got row{}, col{}, sq{}",
+                            row, column, figure.getSquareIndex(), figure.getRowIndex(), figure.getColumnIndex(), figure.getSquareIndex());
+                    throw new IllegalStateException("The figureList is not in the expected order.");
                 }
                 String text = value == null ? "null" : value.toString();
-                String toolTipText = sudokuNumber.toString();
+                String toolTipText = figure.toString();
                 JPanel panel = new JPanel();
                 panel.setBorder(BorderFactory.createMatteBorder(row % nSquares == 0 ? 3 : 1, column % nSquares == 0 ? 3 : 1, 1, 1, TangoColorFactory.ALUMINIUM_6));
-                panel.setBackground(Color.WHITE);
+
+                if (figure.isLocked()) {
+                    panel.setBackground(Color.RED);
+                } else {
+                    panel.setBackground(Color.WHITE);
+                }
+
                 JLabel numberLabel = new JLabel(text);
                 panel.add(numberLabel);
-                //panel.addMouseListener(new SudokuNumberAction(sudokuNumber));
+                //panel.addMouseListener(new FigureAction(figure)); // TODO
                 panel.setToolTipText(toolTipText);
                 add(panel);
 
@@ -81,13 +86,13 @@ public class SudokuPanel extends SolutionPanel {
         }
     }
 
-    private class SudokuNumberAction extends AbstractAction {
+    private class FigureAction extends AbstractAction {
 
-        private SudokuNumber sudokuNumber;
+        private Figure figure;
 
-        public SudokuNumberAction(SudokuNumber sudokuNumber) {
+        public FigureAction(Figure figure) {
             super(null);
-            this.sudokuNumber = sudokuNumber;
+            this.figure = figure;
         }
 
         public void actionPerformed(ActionEvent e) {
@@ -95,14 +100,14 @@ public class SudokuPanel extends SolutionPanel {
             JPanel messagePanel = new JPanel(new BorderLayout());
             messagePanel.add(new JLabel("Move to row: "), BorderLayout.WEST);
             JComboBox rowListField = new JComboBox(rowList.toArray());
-            rowListField.setSelectedItem(sudokuNumber.getRow());
+            rowListField.setSelectedItem(figure.getRow());
             messagePanel.add(rowListField, BorderLayout.CENTER);
             int result = JOptionPane.showConfirmDialog(SudokuPanel.this.getRootPane(), messagePanel,
-                    "SudokuNumber in column " + sudokuNumber.getColumn().getIndex(),
+                    "Figure in column " + figure.getColumn().getIndex(),
                     JOptionPane.OK_CANCEL_OPTION);
             if (result == JOptionPane.OK_OPTION) {
                 Row toRow = (Row) rowListField.getSelectedItem();
-                solutionBusiness.doChangeMove(sudokuNumber, "row", toRow);
+                solutionBusiness.doChangeMove(figure, "row", toRow);
                 solverAndPersistenceFrame.resetScreen();
             }
         }

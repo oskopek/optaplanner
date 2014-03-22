@@ -19,8 +19,8 @@ package org.optaplanner.examples.sudoku.app;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import org.optaplanner.core.config.solver.XmlSolverFactory;
+import org.optaplanner.examples.sudoku.domain.Figure;
 import org.optaplanner.examples.sudoku.domain.Sudoku;
-import org.optaplanner.examples.sudoku.domain.SudokuNumber;
 import org.optaplanner.examples.sudoku.persistence.SudokuGenerator;
 
 import java.util.List;
@@ -49,7 +49,7 @@ public class SudokuHelloWorld {
         StringBuilder displayString = new StringBuilder();
         int n = sudoku.getN();
         int nSquares = Sudoku.nSquares(n);
-        List<SudokuNumber> sudokuNumberList = sudoku.getSudokuNumberList();
+        List<Figure> figureList = sudoku.getFigureList();
         int sudokuNumberId = 0;
         for (int row = 0; row < sudoku.getRowList().size(); row++) {
             if (row != 0 && row % nSquares == 0) {
@@ -59,16 +59,16 @@ public class SudokuHelloWorld {
                 displayString.append("\n");
             }
             for (int column = 0; column < sudoku.getColumnList().size(); column++) {
-                SudokuNumber sudokuNumber = sudokuNumberList.get(sudokuNumberId);
+                Figure figure = figureList.get(sudokuNumberId);
                 sudokuNumberId++;
-                if (sudokuNumber.getColumnIndex() != column || sudokuNumber.getRowIndex() != row) {
-                    throw new IllegalStateException("The sudokuNumberList is not in the expected order.");
+                if (figure.getColumnIndex() != column || figure.getRowIndex() != row) {
+                    throw new IllegalStateException("The figureList is not in the expected order.");
                 }
                 displayString.append(" ");
                 if (column != 0 && column % nSquares == 0) {
                     displayString.append("|");
                 }
-                displayString.append(sudokuNumber.getNumber());
+                displayString.append(figure.getValue());
             }
             displayString.append("\n");
         }

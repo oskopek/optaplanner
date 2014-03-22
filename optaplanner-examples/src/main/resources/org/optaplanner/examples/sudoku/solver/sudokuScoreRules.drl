@@ -18,7 +18,7 @@ package org.optaplanner.examples.sudoku.solver;
     dialect "java"
 
 import org.optaplanner.core.api.score.buildin.simple.SimpleScoreHolder;
-import org.optaplanner.examples.sudoku.domain.SudokuNumber;
+import org.optaplanner.examples.sudoku.domain.Figure;
 
 global SimpleScoreHolder scoreHolder;
 
@@ -26,26 +26,26 @@ global SimpleScoreHolder scoreHolder;
 // Constraints
 // ############################################################################
 
-rule "equalSudokuNumbersHorizontal"
+rule "equalFiguresHorizontal"
     when
-        SudokuNumber($id : id, row != null, $i : rowIndex, $num : number)
-        SudokuNumber(id > $id, rowIndex == $i, number == $num)
+        Figure($id : id, row != null, $i : rowIndex, $val : value)
+        Figure(id > $id, rowIndex == $i, value == $val)
     then
         scoreHolder.addConstraintMatch(kcontext, -1);
 end
 
-rule "equalSudokuNumbersVertical"
+rule "equalFiguresVertical"
     when
-        SudokuNumber($id : id, column != null, $i : columnIndex, $num : number)
-        SudokuNumber(id > $id, columnIndex == $i, number == $num)
+        Figure($id : id, column != null, $i : columnIndex, $val : value)
+        Figure(id > $id, columnIndex == $i, value == $val)
     then
         scoreHolder.addConstraintMatch(kcontext, -1);
 end
 
-rule "equalSudokuNumbersSquare"
+rule "equalFiguresSquare"
     when
-        SudokuNumber($id : id, square != null, $i : squareIndex, $num : number)
-        SudokuNumber(id > $id, squareIndex == $i, number == $num)
+        Figure($id : id, square != null, $i : squareIndex, $val : value)
+        Figure(id > $id, squareIndex == $i, value == $val)
     then
         scoreHolder.addConstraintMatch(kcontext, -1);
 end

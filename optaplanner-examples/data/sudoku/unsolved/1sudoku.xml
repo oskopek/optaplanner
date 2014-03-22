@@ -13,25 +13,26 @@
       <index>0</index>
     </Row>
   </rowList>
-  <numberList id="6">
-    <Number id="7">
+  <valueList id="6">
+    <Value id="7">
       <id>1</id>
       <value>1</value>
-    </Number>
-  </numberList>
+    </Value>
+  </valueList>
   <squareList id="8">
     <Square id="9">
       <id>0</id>
       <index>0</index>
     </Square>
   </squareList>
-  <sudokuNumberList id="10">
-    <SudokuNumber id="11">
+  <figureList id="10">
+    <Figure id="11">
       <id>0</id>
       <column reference="3"/>
       <square reference="9"/>
-      <number reference="7"/>
       <row reference="5"/>
-    </SudokuNumber>
-  </sudokuNumberList>
+      <locked>false</locked>
+      <value reference="7"/>
+    </Figure>
+  </figureList>
 </Sudoku>

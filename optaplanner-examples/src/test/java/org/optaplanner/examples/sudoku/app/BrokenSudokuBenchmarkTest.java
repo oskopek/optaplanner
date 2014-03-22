@@ -16,6 +16,7 @@
 
 package org.optaplanner.examples.sudoku.app;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.optaplanner.benchmark.api.PlannerBenchmarkException;
 import org.optaplanner.benchmark.api.PlannerBenchmarkFactory;
@@ -25,6 +26,7 @@ import org.optaplanner.examples.sudoku.domain.Row;
 
 import java.io.File;
 
+@Ignore("Temporarily disabled")
 public class BrokenSudokuBenchmarkTest extends PlannerBenchmarkTest {
 
     @Override

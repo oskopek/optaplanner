@@ -133,72 +133,72 @@
       <index>15</index>
     </Row>
   </rowList>
-  <numberList id="36">
-    <Number id="37">
+  <valueList id="36">
+    <Value id="37">
       <id>1</id>
       <value>1</value>
-    </Number>
-    <Number id="38">
+    </Value>
+    <Value id="38">
       <id>2</id>
       <value>2</value>
-    </Number>
-    <Number id="39">
+    </Value>
+    <Value id="39">
       <id>3</id>
       <value>3</value>
-    </Number>
-    <Number id="40">
+    </Value>
+    <Value id="40">
       <id>4</id>
       <value>4</value>
-    </Number>
-    <Number id="41">
+    </Value>
+    <Value id="41">
       <id>5</id>
       <value>5</value>
-    </Number>
-    <Number id="42">
+    </Value>
+    <Value id="42">
       <id>6</id>
       <value>6</value>
-    </Number>
-    <Number id="43">
+    </Value>
+    <Value id="43">
       <id>7</id>
       <value>7</value>
-    </Number>
-    <Number id="44">
+    </Value>
+    <Value id="44">
       <id>8</id>
       <value>8</value>
-    </Number>
-    <Number id="45">
+    </Value>
+    <Value id="45">
       <id>9</id>
       <value>9</value>
-    </Number>
-    <Number id="46">
+    </Value>
+    <Value id="46">
       <id>10</id>
       <value>10</value>
-    </Number>
-    <Number id="47">
+    </Value>
+    <Value id="47">
       <id>11</id>
       <value>11</value>
-    </Number>
-    <Number id="48">
+    </Value>
+    <Value id="48">
       <id>12</id>
       <value>12</value>
-    </Number>
-    <Number id="49">
+    </Value>
+    <Value id="49">
       <id>13</id>
       <value>13</value>
-    </Number>
-    <Number id="50">
+    </Value>
+    <Value id="50">
       <id>14</id>
       <value>14</value>
-    </Number>
-    <Number id="51">
+    </Value>
+    <Value id="51">
       <id>15</id>
       <value>15</value>
-    </Number>
-    <Number id="52">
+    </Value>
+    <Value id="52">
       <id>16</id>
       <value>16</value>
-    </Number>
-  </numberList>
+    </Value>
+  </valueList>
   <squareList id="53">
     <Square id="54">
       <id>0</id>
@@ -265,1798 +265,2054 @@
       <index>15</index>
     </Square>
   </squareList>
-  <sudokuNumberList id="70">
-    <SudokuNumber id="71">
+  <figureList id="70">
+    <Figure id="71">
       <id>0</id>
       <column reference="3"/>
       <square reference="54"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="72">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="72">
       <id>1</id>
       <column reference="4"/>
       <square reference="54"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="73">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="73">
       <id>2</id>
       <column reference="5"/>
       <square reference="54"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="74">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="74">
       <id>3</id>
       <column reference="6"/>
       <square reference="54"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="75">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="75">
       <id>4</id>
       <column reference="7"/>
       <square reference="55"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="76">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="76">
       <id>5</id>
       <column reference="8"/>
       <square reference="55"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="77">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="77">
       <id>6</id>
       <column reference="9"/>
       <square reference="55"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="78">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="78">
       <id>7</id>
       <column reference="10"/>
       <square reference="55"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="79">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="79">
       <id>8</id>
       <column reference="11"/>
       <square reference="56"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="80">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="80">
       <id>9</id>
       <column reference="12"/>
       <square reference="56"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="81">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="81">
       <id>10</id>
       <column reference="13"/>
       <square reference="56"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="82">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="82">
       <id>11</id>
       <column reference="14"/>
       <square reference="56"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="83">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="83">
       <id>12</id>
       <column reference="15"/>
       <square reference="57"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="84">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="84">
       <id>13</id>
       <column reference="16"/>
       <square reference="57"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="85">
+      <locked>true</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="85">
       <id>14</id>
       <column reference="17"/>
       <square reference="57"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="86">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="86">
       <id>15</id>
       <column reference="18"/>
       <square reference="57"/>
-      <number reference="37"/>
       <row reference="20"/>
-    </SudokuNumber>
-    <SudokuNumber id="87">
+      <locked>false</locked>
+      <value reference="37"/>
+    </Figure>
+    <Figure id="87">
       <id>16</id>
       <column reference="3"/>
       <square reference="54"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="88">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="88">
       <id>17</id>
       <column reference="4"/>
       <square reference="54"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="89">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="89">
       <id>18</id>
       <column reference="5"/>
       <square reference="54"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="90">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="90">
       <id>19</id>
       <column reference="6"/>
       <square reference="54"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="91">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="91">
       <id>20</id>
       <column reference="7"/>
       <square reference="55"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="92">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="92">
       <id>21</id>
       <column reference="8"/>
       <square reference="55"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="93">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="93">
       <id>22</id>
       <column reference="9"/>
       <square reference="55"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="94">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="94">
       <id>23</id>
       <column reference="10"/>
       <square reference="55"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="95">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="95">
       <id>24</id>
       <column reference="11"/>
       <square reference="56"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="96">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="96">
       <id>25</id>
       <column reference="12"/>
       <square reference="56"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="97">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="97">
       <id>26</id>
       <column reference="13"/>
       <square reference="56"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="98">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="98">
       <id>27</id>
       <column reference="14"/>
       <square reference="56"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="99">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="99">
       <id>28</id>
       <column reference="15"/>
       <square reference="57"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="100">
+      <locked>true</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="100">
       <id>29</id>
       <column reference="16"/>
       <square reference="57"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="101">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="101">
       <id>30</id>
       <column reference="17"/>
       <square reference="57"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="102">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="102">
       <id>31</id>
       <column reference="18"/>
       <square reference="57"/>
-      <number reference="38"/>
       <row reference="21"/>
-    </SudokuNumber>
-    <SudokuNumber id="103">
+      <locked>false</locked>
+      <value reference="38"/>
+    </Figure>
+    <Figure id="103">
       <id>32</id>
       <column reference="3"/>
       <square reference="54"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="104">
+      <locked>true</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="104">
       <id>33</id>
       <column reference="4"/>
       <square reference="54"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="105">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="105">
       <id>34</id>
       <column reference="5"/>
       <square reference="54"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="106">
+      <locked>true</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="106">
       <id>35</id>
       <column reference="6"/>
       <square reference="54"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="107">
+      <locked>true</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="107">
       <id>36</id>
       <column reference="7"/>
       <square reference="55"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="108">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="108">
       <id>37</id>
       <column reference="8"/>
       <square reference="55"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="109">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="109">
       <id>38</id>
       <column reference="9"/>
       <square reference="55"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="110">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="110">
       <id>39</id>
       <column reference="10"/>
       <square reference="55"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="111">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="111">
       <id>40</id>
       <column reference="11"/>
       <square reference="56"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="112">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="112">
       <id>41</id>
       <column reference="12"/>
       <square reference="56"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="113">
+      <locked>true</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="113">
       <id>42</id>
       <column reference="13"/>
       <square reference="56"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="114">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="114">
       <id>43</id>
       <column reference="14"/>
       <square reference="56"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="115">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="115">
       <id>44</id>
       <column reference="15"/>
       <square reference="57"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="116">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="116">
       <id>45</id>
       <column reference="16"/>
       <square reference="57"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="117">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="117">
       <id>46</id>
       <column reference="17"/>
       <square reference="57"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="118">
+      <locked>false</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="118">
       <id>47</id>
       <column reference="18"/>
       <square reference="57"/>
-      <number reference="39"/>
       <row reference="22"/>
-    </SudokuNumber>
-    <SudokuNumber id="119">
+      <locked>true</locked>
+      <value reference="39"/>
+    </Figure>
+    <Figure id="119">
       <id>48</id>
       <column reference="3"/>
       <square reference="54"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="120">
+      <locked>true</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="120">
       <id>49</id>
       <column reference="4"/>
       <square reference="54"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="121">
+      <locked>true</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="121">
       <id>50</id>
       <column reference="5"/>
       <square reference="54"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="122">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="122">
       <id>51</id>
       <column reference="6"/>
       <square reference="54"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="123">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="123">
       <id>52</id>
       <column reference="7"/>
       <square reference="55"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="124">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="124">
       <id>53</id>
       <column reference="8"/>
       <square reference="55"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="125">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="125">
       <id>54</id>
       <column reference="9"/>
       <square reference="55"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="126">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="126">
       <id>55</id>
       <column reference="10"/>
       <square reference="55"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="127">
+      <locked>true</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="127">
       <id>56</id>
       <column reference="11"/>
       <square reference="56"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="128">
+      <locked>true</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="128">
       <id>57</id>
       <column reference="12"/>
       <square reference="56"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="129">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="129">
       <id>58</id>
       <column reference="13"/>
       <square reference="56"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="130">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="130">
       <id>59</id>
       <column reference="14"/>
       <square reference="56"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="131">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="131">
       <id>60</id>
       <column reference="15"/>
       <square reference="57"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="132">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="132">
       <id>61</id>
       <column reference="16"/>
       <square reference="57"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="133">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="133">
       <id>62</id>
       <column reference="17"/>
       <square reference="57"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="134">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="134">
       <id>63</id>
       <column reference="18"/>
       <square reference="57"/>
-      <number reference="40"/>
       <row reference="23"/>
-    </SudokuNumber>
-    <SudokuNumber id="135">
+      <locked>false</locked>
+      <value reference="40"/>
+    </Figure>
+    <Figure id="135">
       <id>64</id>
       <column reference="3"/>
       <square reference="58"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="136">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="136">
       <id>65</id>
       <column reference="4"/>
       <square reference="58"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="137">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="137">
       <id>66</id>
       <column reference="5"/>
       <square reference="58"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="138">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="138">
       <id>67</id>
       <column reference="6"/>
       <square reference="58"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="139">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="139">
       <id>68</id>
       <column reference="7"/>
       <square reference="59"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="140">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="140">
       <id>69</id>
       <column reference="8"/>
       <square reference="59"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="141">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="141">
       <id>70</id>
       <column reference="9"/>
       <square reference="59"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="142">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="142">
       <id>71</id>
       <column reference="10"/>
       <square reference="59"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="143">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="143">
       <id>72</id>
       <column reference="11"/>
       <square reference="60"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="144">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="144">
       <id>73</id>
       <column reference="12"/>
       <square reference="60"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="145">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="145">
       <id>74</id>
       <column reference="13"/>
       <square reference="60"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="146">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="146">
       <id>75</id>
       <column reference="14"/>
       <square reference="60"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="147">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="147">
       <id>76</id>
       <column reference="15"/>
       <square reference="61"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="148">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="148">
       <id>77</id>
       <column reference="16"/>
       <square reference="61"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="149">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="149">
       <id>78</id>
       <column reference="17"/>
       <square reference="61"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="150">
+      <locked>false</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="150">
       <id>79</id>
       <column reference="18"/>
       <square reference="61"/>
-      <number reference="41"/>
       <row reference="24"/>
-    </SudokuNumber>
-    <SudokuNumber id="151">
+      <locked>true</locked>
+      <value reference="41"/>
+    </Figure>
+    <Figure id="151">
       <id>80</id>
       <column reference="3"/>
       <square reference="58"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="152">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="152">
       <id>81</id>
       <column reference="4"/>
       <square reference="58"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="153">
+      <locked>true</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="153">
       <id>82</id>
       <column reference="5"/>
       <square reference="58"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="154">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="154">
       <id>83</id>
       <column reference="6"/>
       <square reference="58"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="155">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="155">
       <id>84</id>
       <column reference="7"/>
       <square reference="59"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="156">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="156">
       <id>85</id>
       <column reference="8"/>
       <square reference="59"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="157">
+      <locked>true</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="157">
       <id>86</id>
       <column reference="9"/>
       <square reference="59"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="158">
+      <locked>true</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="158">
       <id>87</id>
       <column reference="10"/>
       <square reference="59"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="159">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="159">
       <id>88</id>
       <column reference="11"/>
       <square reference="60"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="160">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="160">
       <id>89</id>
       <column reference="12"/>
       <square reference="60"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="161">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="161">
       <id>90</id>
       <column reference="13"/>
       <square reference="60"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="162">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="162">
       <id>91</id>
       <column reference="14"/>
       <square reference="60"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="163">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="163">
       <id>92</id>
       <column reference="15"/>
       <square reference="61"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="164">
+      <locked>true</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="164">
       <id>93</id>
       <column reference="16"/>
       <square reference="61"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="165">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="165">
       <id>94</id>
       <column reference="17"/>
       <square reference="61"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="166">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="166">
       <id>95</id>
       <column reference="18"/>
       <square reference="61"/>
-      <number reference="42"/>
       <row reference="25"/>
-    </SudokuNumber>
-    <SudokuNumber id="167">
+      <locked>false</locked>
+      <value reference="42"/>
+    </Figure>
+    <Figure id="167">
       <id>96</id>
       <column reference="3"/>
       <square reference="58"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="168">
+      <locked>true</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="168">
       <id>97</id>
       <column reference="4"/>
       <square reference="58"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="169">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="169">
       <id>98</id>
       <column reference="5"/>
       <square reference="58"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="170">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="170">
       <id>99</id>
       <column reference="6"/>
       <square reference="58"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="171">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="171">
       <id>100</id>
       <column reference="7"/>
       <square reference="59"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="172">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="172">
       <id>101</id>
       <column reference="8"/>
       <square reference="59"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="173">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="173">
       <id>102</id>
       <column reference="9"/>
       <square reference="59"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="174">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="174">
       <id>103</id>
       <column reference="10"/>
       <square reference="59"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="175">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="175">
       <id>104</id>
       <column reference="11"/>
       <square reference="60"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="176">
+      <locked>true</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="176">
       <id>105</id>
       <column reference="12"/>
       <square reference="60"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="177">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="177">
       <id>106</id>
       <column reference="13"/>
       <square reference="60"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="178">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="178">
       <id>107</id>
       <column reference="14"/>
       <square reference="60"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="179">
+      <locked>true</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="179">
       <id>108</id>
       <column reference="15"/>
       <square reference="61"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="180">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="180">
       <id>109</id>
       <column reference="16"/>
       <square reference="61"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="181">
+      <locked>true</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="181">
       <id>110</id>
       <column reference="17"/>
       <square reference="61"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="182">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="182">
       <id>111</id>
       <column reference="18"/>
       <square reference="61"/>
-      <number reference="43"/>
       <row reference="26"/>
-    </SudokuNumber>
-    <SudokuNumber id="183">
+      <locked>false</locked>
+      <value reference="43"/>
+    </Figure>
+    <Figure id="183">
       <id>112</id>
       <column reference="3"/>
       <square reference="58"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="184">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="184">
       <id>113</id>
       <column reference="4"/>
       <square reference="58"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="185">
+      <locked>true</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="185">
       <id>114</id>
       <column reference="5"/>
       <square reference="58"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="186">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="186">
       <id>115</id>
       <column reference="6"/>
       <square reference="58"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="187">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="187">
       <id>116</id>
       <column reference="7"/>
       <square reference="59"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="188">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="188">
       <id>117</id>
       <column reference="8"/>
       <square reference="59"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="189">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="189">
       <id>118</id>
       <column reference="9"/>
       <square reference="59"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="190">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="190">
       <id>119</id>
       <column reference="10"/>
       <square reference="59"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="191">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="191">
       <id>120</id>
       <column reference="11"/>
       <square reference="60"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="192">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="192">
       <id>121</id>
       <column reference="12"/>
       <square reference="60"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="193">
+      <locked>true</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="193">
       <id>122</id>
       <column reference="13"/>
       <square reference="60"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="194">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="194">
       <id>123</id>
       <column reference="14"/>
       <square reference="60"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="195">
+      <locked>true</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="195">
       <id>124</id>
       <column reference="15"/>
       <square reference="61"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="196">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="196">
       <id>125</id>
       <column reference="16"/>
       <square reference="61"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="197">
+      <locked>true</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="197">
       <id>126</id>
       <column reference="17"/>
       <square reference="61"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="198">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="198">
       <id>127</id>
       <column reference="18"/>
       <square reference="61"/>
-      <number reference="44"/>
       <row reference="27"/>
-    </SudokuNumber>
-    <SudokuNumber id="199">
+      <locked>false</locked>
+      <value reference="44"/>
+    </Figure>
+    <Figure id="199">
       <id>128</id>
       <column reference="3"/>
       <square reference="62"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="200">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="200">
       <id>129</id>
       <column reference="4"/>
       <square reference="62"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="201">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="201">
       <id>130</id>
       <column reference="5"/>
       <square reference="62"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="202">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="202">
       <id>131</id>
       <column reference="6"/>
       <square reference="62"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="203">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="203">
       <id>132</id>
       <column reference="7"/>
       <square reference="63"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="204">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="204">
       <id>133</id>
       <column reference="8"/>
       <square reference="63"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="205">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="205">
       <id>134</id>
       <column reference="9"/>
       <square reference="63"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="206">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="206">
       <id>135</id>
       <column reference="10"/>
       <square reference="63"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="207">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="207">
       <id>136</id>
       <column reference="11"/>
       <square reference="64"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="208">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="208">
       <id>137</id>
       <column reference="12"/>
       <square reference="64"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="209">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="209">
       <id>138</id>
       <column reference="13"/>
       <square reference="64"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="210">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="210">
       <id>139</id>
       <column reference="14"/>
       <square reference="64"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="211">
+      <locked>true</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="211">
       <id>140</id>
       <column reference="15"/>
       <square reference="65"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="212">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="212">
       <id>141</id>
       <column reference="16"/>
       <square reference="65"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="213">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="213">
       <id>142</id>
       <column reference="17"/>
       <square reference="65"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="214">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="214">
       <id>143</id>
       <column reference="18"/>
       <square reference="65"/>
-      <number reference="45"/>
       <row reference="28"/>
-    </SudokuNumber>
-    <SudokuNumber id="215">
+      <locked>false</locked>
+      <value reference="45"/>
+    </Figure>
+    <Figure id="215">
       <id>144</id>
       <column reference="3"/>
       <square reference="62"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="216">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="216">
       <id>145</id>
       <column reference="4"/>
       <square reference="62"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="217">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="217">
       <id>146</id>
       <column reference="5"/>
       <square reference="62"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="218">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="218">
       <id>147</id>
       <column reference="6"/>
       <square reference="62"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="219">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="219">
       <id>148</id>
       <column reference="7"/>
       <square reference="63"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="220">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="220">
       <id>149</id>
       <column reference="8"/>
       <square reference="63"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="221">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="221">
       <id>150</id>
       <column reference="9"/>
       <square reference="63"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="222">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="222">
       <id>151</id>
       <column reference="10"/>
       <square reference="63"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="223">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="223">
       <id>152</id>
       <column reference="11"/>
       <square reference="64"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="224">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="224">
       <id>153</id>
       <column reference="12"/>
       <square reference="64"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="225">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="225">
       <id>154</id>
       <column reference="13"/>
       <square reference="64"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="226">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="226">
       <id>155</id>
       <column reference="14"/>
       <square reference="64"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="227">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="227">
       <id>156</id>
       <column reference="15"/>
       <square reference="65"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="228">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="228">
       <id>157</id>
       <column reference="16"/>
       <square reference="65"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="229">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="229">
       <id>158</id>
       <column reference="17"/>
       <square reference="65"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="230">
+      <locked>false</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="230">
       <id>159</id>
       <column reference="18"/>
       <square reference="65"/>
-      <number reference="46"/>
       <row reference="29"/>
-    </SudokuNumber>
-    <SudokuNumber id="231">
+      <locked>true</locked>
+      <value reference="46"/>
+    </Figure>
+    <Figure id="231">
       <id>160</id>
       <column reference="3"/>
       <square reference="62"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="232">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="232">
       <id>161</id>
       <column reference="4"/>
       <square reference="62"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="233">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="233">
       <id>162</id>
       <column reference="5"/>
       <square reference="62"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="234">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="234">
       <id>163</id>
       <column reference="6"/>
       <square reference="62"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="235">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="235">
       <id>164</id>
       <column reference="7"/>
       <square reference="63"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="236">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="236">
       <id>165</id>
       <column reference="8"/>
       <square reference="63"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="237">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="237">
       <id>166</id>
       <column reference="9"/>
       <square reference="63"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="238">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="238">
       <id>167</id>
       <column reference="10"/>
       <square reference="63"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="239">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="239">
       <id>168</id>
       <column reference="11"/>
       <square reference="64"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="240">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="240">
       <id>169</id>
       <column reference="12"/>
       <square reference="64"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="241">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="241">
       <id>170</id>
       <column reference="13"/>
       <square reference="64"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="242">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="242">
       <id>171</id>
       <column reference="14"/>
       <square reference="64"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="243">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="243">
       <id>172</id>
       <column reference="15"/>
       <square reference="65"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="244">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="244">
       <id>173</id>
       <column reference="16"/>
       <square reference="65"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="245">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="245">
       <id>174</id>
       <column reference="17"/>
       <square reference="65"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="246">
+      <locked>false</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="246">
       <id>175</id>
       <column reference="18"/>
       <square reference="65"/>
-      <number reference="47"/>
       <row reference="30"/>
-    </SudokuNumber>
-    <SudokuNumber id="247">
+      <locked>true</locked>
+      <value reference="47"/>
+    </Figure>
+    <Figure id="247">
       <id>176</id>
       <column reference="3"/>
       <square reference="62"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="248">
+      <locked>true</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="248">
       <id>177</id>
       <column reference="4"/>
       <square reference="62"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="249">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="249">
       <id>178</id>
       <column reference="5"/>
       <square reference="62"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="250">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="250">
       <id>179</id>
       <column reference="6"/>
       <square reference="62"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="251">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="251">
       <id>180</id>
       <column reference="7"/>
       <square reference="63"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="252">
+      <locked>true</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="252">
       <id>181</id>
       <column reference="8"/>
       <square reference="63"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="253">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="253">
       <id>182</id>
       <column reference="9"/>
       <square reference="63"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="254">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="254">
       <id>183</id>
       <column reference="10"/>
       <square reference="63"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="255">
+      <locked>true</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="255">
       <id>184</id>
       <column reference="11"/>
       <square reference="64"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="256">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="256">
       <id>185</id>
       <column reference="12"/>
       <square reference="64"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="257">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="257">
       <id>186</id>
       <column reference="13"/>
       <square reference="64"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="258">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="258">
       <id>187</id>
       <column reference="14"/>
       <square reference="64"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="259">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="259">
       <id>188</id>
       <column reference="15"/>
       <square reference="65"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="260">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="260">
       <id>189</id>
       <column reference="16"/>
       <square reference="65"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="261">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="261">
       <id>190</id>
       <column reference="17"/>
       <square reference="65"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="262">
+      <locked>false</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="262">
       <id>191</id>
       <column reference="18"/>
       <square reference="65"/>
-      <number reference="48"/>
       <row reference="31"/>
-    </SudokuNumber>
-    <SudokuNumber id="263">
+      <locked>true</locked>
+      <value reference="48"/>
+    </Figure>
+    <Figure id="263">
       <id>192</id>
       <column reference="3"/>
       <square reference="66"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="264">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="264">
       <id>193</id>
       <column reference="4"/>
       <square reference="66"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="265">
+      <locked>true</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="265">
       <id>194</id>
       <column reference="5"/>
       <square reference="66"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="266">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="266">
       <id>195</id>
       <column reference="6"/>
       <square reference="66"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="267">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="267">
       <id>196</id>
       <column reference="7"/>
       <square reference="67"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="268">
+      <locked>true</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="268">
       <id>197</id>
       <column reference="8"/>
       <square reference="67"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="269">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="269">
       <id>198</id>
       <column reference="9"/>
       <square reference="67"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="270">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="270">
       <id>199</id>
       <column reference="10"/>
       <square reference="67"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="271">
+      <locked>true</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="271">
       <id>200</id>
       <column reference="11"/>
       <square reference="68"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="272">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="272">
       <id>201</id>
       <column reference="12"/>
       <square reference="68"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="273">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="273">
       <id>202</id>
       <column reference="13"/>
       <square reference="68"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="274">
+      <locked>true</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="274">
       <id>203</id>
       <column reference="14"/>
       <square reference="68"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="275">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="275">
       <id>204</id>
       <column reference="15"/>
       <square reference="69"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="276">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="276">
       <id>205</id>
       <column reference="16"/>
       <square reference="69"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="277">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="277">
       <id>206</id>
       <column reference="17"/>
       <square reference="69"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="278">
+      <locked>false</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="278">
       <id>207</id>
       <column reference="18"/>
       <square reference="69"/>
-      <number reference="49"/>
       <row reference="32"/>
-    </SudokuNumber>
-    <SudokuNumber id="279">
+      <locked>true</locked>
+      <value reference="49"/>
+    </Figure>
+    <Figure id="279">
       <id>208</id>
       <column reference="3"/>
       <square reference="66"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="280">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="280">
       <id>209</id>
       <column reference="4"/>
       <square reference="66"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="281">
+      <locked>true</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="281">
       <id>210</id>
       <column reference="5"/>
       <square reference="66"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="282">
+      <locked>true</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="282">
       <id>211</id>
       <column reference="6"/>
       <square reference="66"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="283">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="283">
       <id>212</id>
       <column reference="7"/>
       <square reference="67"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="284">
+      <locked>true</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="284">
       <id>213</id>
       <column reference="8"/>
       <square reference="67"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="285">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="285">
       <id>214</id>
       <column reference="9"/>
       <square reference="67"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="286">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="286">
       <id>215</id>
       <column reference="10"/>
       <square reference="67"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="287">
+      <locked>true</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="287">
       <id>216</id>
       <column reference="11"/>
       <square reference="68"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="288">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="288">
       <id>217</id>
       <column reference="12"/>
       <square reference="68"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="289">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="289">
       <id>218</id>
       <column reference="13"/>
       <square reference="68"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="290">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="290">
       <id>219</id>
       <column reference="14"/>
       <square reference="68"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="291">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="291">
       <id>220</id>
       <column reference="15"/>
       <square reference="69"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="292">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="292">
       <id>221</id>
       <column reference="16"/>
       <square reference="69"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="293">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="293">
       <id>222</id>
       <column reference="17"/>
       <square reference="69"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="294">
+      <locked>false</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="294">
       <id>223</id>
       <column reference="18"/>
       <square reference="69"/>
-      <number reference="50"/>
       <row reference="33"/>
-    </SudokuNumber>
-    <SudokuNumber id="295">
+      <locked>true</locked>
+      <value reference="50"/>
+    </Figure>
+    <Figure id="295">
       <id>224</id>
       <column reference="3"/>
       <square reference="66"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="296">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="296">
       <id>225</id>
       <column reference="4"/>
       <square reference="66"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="297">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="297">
       <id>226</id>
       <column reference="5"/>
       <square reference="66"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="298">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="298">
       <id>227</id>
       <column reference="6"/>
       <square reference="66"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="299">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="299">
       <id>228</id>
       <column reference="7"/>
       <square reference="67"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="300">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="300">
       <id>229</id>
       <column reference="8"/>
       <square reference="67"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="301">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="301">
       <id>230</id>
       <column reference="9"/>
       <square reference="67"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="302">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="302">
       <id>231</id>
       <column reference="10"/>
       <square reference="67"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="303">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="303">
       <id>232</id>
       <column reference="11"/>
       <square reference="68"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="304">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="304">
       <id>233</id>
       <column reference="12"/>
       <square reference="68"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="305">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="305">
       <id>234</id>
       <column reference="13"/>
       <square reference="68"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="306">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="306">
       <id>235</id>
       <column reference="14"/>
       <square reference="68"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="307">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="307">
       <id>236</id>
       <column reference="15"/>
       <square reference="69"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="308">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="308">
       <id>237</id>
       <column reference="16"/>
       <square reference="69"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="309">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="309">
       <id>238</id>
       <column reference="17"/>
       <square reference="69"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="310">
+      <locked>false</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="310">
       <id>239</id>
       <column reference="18"/>
       <square reference="69"/>
-      <number reference="51"/>
       <row reference="34"/>
-    </SudokuNumber>
-    <SudokuNumber id="311">
+      <locked>true</locked>
+      <value reference="51"/>
+    </Figure>
+    <Figure id="311">
       <id>240</id>
       <column reference="3"/>
       <square reference="66"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="312">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="312">
       <id>241</id>
       <column reference="4"/>
       <square reference="66"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="313">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="313">
       <id>242</id>
       <column reference="5"/>
       <square reference="66"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="314">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="314">
       <id>243</id>
       <column reference="6"/>
       <square reference="66"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="315">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="315">
       <id>244</id>
       <column reference="7"/>
       <square reference="67"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="316">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="316">
       <id>245</id>
       <column reference="8"/>
       <square reference="67"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="317">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="317">
       <id>246</id>
       <column reference="9"/>
       <square reference="67"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="318">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="318">
       <id>247</id>
       <column reference="10"/>
       <square reference="67"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="319">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="319">
       <id>248</id>
       <column reference="11"/>
       <square reference="68"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="320">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="320">
       <id>249</id>
       <column reference="12"/>
       <square reference="68"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="321">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="321">
       <id>250</id>
       <column reference="13"/>
       <square reference="68"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="322">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="322">
       <id>251</id>
       <column reference="14"/>
       <square reference="68"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="323">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="323">
       <id>252</id>
       <column reference="15"/>
       <square reference="69"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="324">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="324">
       <id>253</id>
       <column reference="16"/>
       <square reference="69"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="325">
+      <locked>false</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="325">
       <id>254</id>
       <column reference="17"/>
       <square reference="69"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-    <SudokuNumber id="326">
+      <locked>true</locked>
+      <value reference="52"/>
+    </Figure>
+    <Figure id="326">
       <id>255</id>
       <column reference="18"/>
       <square reference="69"/>
-      <number reference="52"/>
       <row reference="35"/>
-    </SudokuNumber>
-  </sudokuNumberList>
+      <locked>true</locked>
+      <value reference="52"/>
+    </Figure>
+  </figureList>
 </Sudoku>

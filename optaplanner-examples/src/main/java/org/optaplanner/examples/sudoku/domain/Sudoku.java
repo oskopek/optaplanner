@@ -28,8 +28,6 @@ import org.optaplanner.core.impl.solution.Solution;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.persistence.xstream.XStreamScoreConverter;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -40,14 +38,16 @@ public class Sudoku extends AbstractPersistable implements Solution<SimpleScore>
 
     private int n;
 
+    private String name;
+
     // Problem facts
     private List<Column> columnList;
     private List<Row> rowList;
-    private List<Number> numberList;
+    private List<Value> valueList;
     private List<Square> squareList;
 
     // Planning entities
-    private List<SudokuNumber> sudokuNumberList;
+    private List<Figure> figureList;
 
     @XStreamConverter(value = XStreamScoreConverter.class, types = {SimpleScoreDefinition.class})
     private SimpleScore score;
@@ -62,6 +62,14 @@ public class Sudoku extends AbstractPersistable implements Solution<SimpleScore>
             throw new IllegalArgumentException("N must be a squared whole number: " + n);
         }
         this.n = n;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Column> getColumnList() {
@@ -81,12 +89,12 @@ public class Sudoku extends AbstractPersistable implements Solution<SimpleScore>
     }
 
     @ValueRangeProvider(id = "numberRange")
-    public List<Number> getNumberList() {
-        return numberList;
+    public List<Value> getValueList() {
+        return valueList;
     }
 
-    public void setNumberList(List<Number> numberList) {
-        this.numberList = numberList;
+    public void setValueList(List<Value> valueList) {
+        this.valueList = valueList;
     }
 
     public List<Square> getSquareList() {
@@ -98,12 +106,12 @@ public class Sudoku extends AbstractPersistable implements Solution<SimpleScore>
     }
 
     @PlanningEntityCollectionProperty
-    public List<SudokuNumber> getSudokuNumberList() {
-        return sudokuNumberList;
+    public List<Figure> getFigureList() {
+        return figureList;
     }
 
-    public void setSudokuNumberList(List<SudokuNumber> sudokuNumberList) {
-        this.sudokuNumberList = sudokuNumberList;
+    public void setFigureList(List<Figure> figureList) {
+        this.figureList = figureList;
     }
 
     public SimpleScore getScore() {
@@ -126,9 +134,9 @@ public class Sudoku extends AbstractPersistable implements Solution<SimpleScore>
         List<Object> facts = new ArrayList<Object>();
         facts.addAll(columnList);
         facts.addAll(rowList);
-        facts.addAll(numberList);
+        facts.addAll(valueList);
         facts.addAll(squareList);
-        // Do not add the planning entity's (sudokuNumberList) because that will be done automatically
+        // Do not add the planning entity's (figureList) because that will be done automatically
         return facts;
     }
 

@@ -2,7 +2,7 @@
 <solver>
   <!--<environmentMode>FAST_ASSERT</environmentMode>-->
   <solutionClass>org.optaplanner.examples.sudoku.domain.Sudoku</solutionClass>
-  <planningEntityClass>org.optaplanner.examples.sudoku.domain.SudokuNumber</planningEntityClass>
+  <planningEntityClass>org.optaplanner.examples.sudoku.domain.Figure</planningEntityClass>
 
   <scoreDirectorFactory>
     <scoreDefinitionType>SIMPLE</scoreDefinitionType>
@@ -20,23 +20,23 @@
     <bestScoreLimit>0</bestScoreLimit>
   </termination>
   <constructionHeuristic>
-    <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+    <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
   </constructionHeuristic>
   <localSearch>
     <changeMoveSelector>
       <selectionOrder>ORIGINAL</selectionOrder>
     </changeMoveSelector>
-    <!-- changeMoveSelector is the generic form of SudokuNumberSwapMoveFactory: -->
+    <!-- changeMoveSelector is the generic form of FigureSwapMoveFactory: -->
     <!-- <moveListFactory>
-      <moveListFactoryClass>org.optaplanner.examples.sudoku.solver.move.factory.SudokuNumberSwapMoveFactory</moveListFactoryClass>
+      <moveListFactoryClass>org.optaplanner.examples.sudoku.solver.move.factory.FigureSwapMoveFactory</moveListFactoryClass>
     </moveListFactory> -->
     <acceptor>
-      <entityTabuSize>5</entityTabuSize>
+      <entityTabuSize>11</entityTabuSize>
     </acceptor>
     <forager>
       <!-- Real world problems require to use of <acceptedCountLimit> -->
-      <acceptedCountLimit>1000</acceptedCountLimit>
-    </forager>
+      <acceptedCountLimit>500</acceptedCountLimit>
+      </forager>
   </localSearch>
   <!-- To scale out, replace <localSearch> with this configuration: -->
   <!--<localSearch>-->

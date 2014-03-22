@@ -14,26 +14,16 @@
  * limitations under the License.
  */
 
-package org.optaplanner.examples.sudoku.domain;
+package org.optaplanner.examples.sudoku.domain.solution;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.examples.common.domain.AbstractPersistable;
+import org.optaplanner.core.impl.heuristic.selector.common.decorator.SelectionFilter;
+import org.optaplanner.core.impl.score.director.ScoreDirector;
+import org.optaplanner.examples.sudoku.domain.Figure;
 
-@XStreamAlias("Number")
-public class Number extends AbstractPersistable {
-
-    private int value;
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
+public class MovableFigureSelectionFilter implements SelectionFilter<Figure> {
 
     @Override
-    public String toString() {
-        return "" + value;
+    public boolean accept(ScoreDirector scoreDirector, Figure selection) {
+        return !selection.isLocked();
     }
 }

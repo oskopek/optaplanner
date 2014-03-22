@@ -18,16 +18,14 @@ package org.optaplanner.examples.sudoku.app;
 
 import org.junit.Ignore;
 import org.junit.runners.Parameterized;
-import org.optaplanner.core.impl.score.director.simple.SimpleScoreCalculator;
 import org.optaplanner.examples.common.app.UnsolvedDirSolveAllTurtleTest;
 import org.optaplanner.examples.common.persistence.SolutionDao;
 import org.optaplanner.examples.sudoku.persistence.SudokuDao;
-import org.optaplanner.examples.sudoku.solver.score.SudokuSimpleScoreCalculator;
 
 import java.io.File;
 import java.util.Collection;
 
-@Ignore
+@Ignore("Temporarily disabled")
 public class SudokuSolveAllTurtleTest extends UnsolvedDirSolveAllTurtleTest {
 
     @Parameterized.Parameters(name = "{index}: {0}")
@@ -44,10 +42,12 @@ public class SudokuSolveAllTurtleTest extends UnsolvedDirSolveAllTurtleTest {
         return "/org/optaplanner/examples/sudoku/solver/sudokuSolverConfig.xml";
     }
 
+    /*
     @Override
     protected Class<? extends SimpleScoreCalculator> overwritingSimpleScoreCalculatorClass() {
         return SudokuSimpleScoreCalculator.class;
     }
+    */
 
     @Override
     protected SolutionDao createSolutionDao() {

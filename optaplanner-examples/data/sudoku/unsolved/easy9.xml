@@ -1,0 +1,223 @@
+<Sudoku id="1">
+  <id>0</id>
+  <n>9</n>
+  <name>easy9</name>
+  <figureList id="2">
+    <Figure id="3">
+      <column id="4">
+        <index>0</index>
+      </column>
+      <row id="5">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="6">
+        <value>1</value>
+      </value>
+    </Figure>
+    <Figure id="7">
+      <column id="8">
+        <index>1</index>
+      </column>
+      <row id="9">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="10">
+        <value>2</value>
+      </value>
+    </Figure>
+    <Figure id="11">
+      <column id="12">
+        <index>2</index>
+      </column>
+      <row id="13">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="14">
+        <value>3</value>
+      </value>
+    </Figure>
+    <Figure id="15">
+      <column id="16">
+        <index>3</index>
+      </column>
+      <row id="17">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="18">
+        <value>4</value>
+      </value>
+    </Figure>
+    <Figure id="19">
+      <column id="20">
+        <index>4</index>
+      </column>
+      <row id="21">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="22">
+        <value>5</value>
+      </value>
+    </Figure>
+    <Figure id="23">
+      <column id="24">
+        <index>5</index>
+      </column>
+      <row id="25">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="26">
+        <value>6</value>
+      </value>
+    </Figure>
+    <Figure id="27">
+      <column id="28">
+        <index>6</index>
+      </column>
+      <row id="29">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="30">
+        <value>7</value>
+      </value>
+    </Figure>
+    <Figure id="31">
+      <column id="32">
+        <index>7</index>
+      </column>
+      <row id="33">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="34">
+        <value>8</value>
+      </value>
+    </Figure>
+    <Figure id="35">
+      <column id="36">
+        <index>8</index>
+      </column>
+      <row id="37">
+        <index>0</index>
+      </row>
+      <locked>true</locked>
+      <value id="38">
+        <value>9</value>
+      </value>
+    </Figure>
+    <Figure id="39">
+      <column id="40">
+        <index>0</index>
+      </column>
+      <row id="41">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="42">
+        <value>4</value>
+      </value>
+    </Figure>
+    <Figure id="43">
+      <column id="44">
+        <index>1</index>
+      </column>
+      <row id="45">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="46">
+        <value>5</value>
+      </value>
+    </Figure>
+    <Figure id="47">
+      <column id="48">
+        <index>2</index>
+      </column>
+      <row id="49">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="50">
+        <value>6</value>
+      </value>
+    </Figure>
+    <Figure id="51">
+      <column id="52">
+        <index>3</index>
+      </column>
+      <row id="53">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="54">
+        <value>7</value>
+      </value>
+    </Figure>
+    <Figure id="55">
+      <column id="56">
+        <index>4</index>
+      </column>
+      <row id="57">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="58">
+        <value>8</value>
+      </value>
+    </Figure>
+    <Figure id="59">
+      <column id="60">
+        <index>5</index>
+      </column>
+      <row id="61">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="62">
+        <value>9</value>
+      </value>
+    </Figure>
+    <Figure id="63">
+      <column id="64">
+        <index>6</index>
+      </column>
+      <row id="65">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="66">
+        <value>1</value>
+      </value>
+    </Figure>
+    <Figure id="67">
+      <column id="68">
+        <index>7</index>
+      </column>
+      <row id="69">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="70">
+        <value>2</value>
+      </value>
+    </Figure>
+    <Figure id="71">
+      <column id="72">
+        <index>8</index>
+      </column>
+      <row id="73">
+        <index>1</index>
+      </row>
+      <locked>true</locked>
+      <value id="74">
+        <value>3</value>
+      </value>
+    </Figure>
+  </figureList>
+</Sudoku>

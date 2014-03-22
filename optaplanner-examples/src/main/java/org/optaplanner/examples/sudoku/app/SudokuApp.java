@@ -31,8 +31,8 @@ import org.optaplanner.core.config.solver.termination.TerminationConfig;
 import org.optaplanner.examples.common.app.CommonApp;
 import org.optaplanner.examples.common.persistence.SolutionDao;
 import org.optaplanner.examples.common.swingui.SolutionPanel;
+import org.optaplanner.examples.sudoku.domain.Figure;
 import org.optaplanner.examples.sudoku.domain.Sudoku;
-import org.optaplanner.examples.sudoku.domain.SudokuNumber;
 import org.optaplanner.examples.sudoku.persistence.SudokuDao;
 import org.optaplanner.examples.sudoku.swingui.SudokuPanel;
 
@@ -82,7 +82,7 @@ public class SudokuApp extends CommonApp {
         SolverConfig solverConfig = new SolverConfig();
 
         solverConfig.setSolutionClass(Sudoku.class);
-        solverConfig.setPlanningEntityClassList(Collections.<Class<?>>singletonList(SudokuNumber.class));
+        solverConfig.setPlanningEntityClassList(Collections.<Class<?>>singletonList(Figure.class));
 
         ScoreDirectorFactoryConfig scoreDirectorFactoryConfig = new ScoreDirectorFactoryConfig();
         scoreDirectorFactoryConfig.setScoreDefinitionType(ScoreDirectorFactoryConfig.ScoreDefinitionType.SIMPLE);

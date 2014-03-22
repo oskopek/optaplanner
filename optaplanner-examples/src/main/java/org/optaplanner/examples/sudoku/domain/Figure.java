@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 JBoss Inc
+ * Copyright 2014 JBoss Inc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,14 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
-import org.optaplanner.examples.sudoku.domain.solution.SudokuNumberStrengthWeightFactory;
-import org.optaplanner.examples.sudoku.domain.solution.SudokuNumberDifficultyWeightFactory;
+import org.optaplanner.examples.sudoku.domain.solution.FigureDifficultyWeightFactory;
+import org.optaplanner.examples.sudoku.domain.solution.MovableFigureSelectionFilter;
+import org.optaplanner.examples.sudoku.domain.solution.ValueStrengthWeightFactory;
 
-@PlanningEntity//(difficultyWeightFactoryClass = SudokuNumberDifficultyWeightFactory.class)
-@XStreamAlias("SudokuNumber")
-public class SudokuNumber extends AbstractPersistable {
+@PlanningEntity(difficultyWeightFactoryClass = FigureDifficultyWeightFactory.class,
+                movableEntitySelectionFilter = MovableFigureSelectionFilter.class)
+@XStreamAlias("Figure")
+public class Figure extends AbstractPersistable {
 
     private Column column;
 
@@ -33,17 +35,20 @@ public class SudokuNumber extends AbstractPersistable {
 
     private Row row;
 
+    //MovableFigureSelectionFilter
+    private boolean locked;
+
     // Planning variables: changes during planning, between score calculations.
-    private Number number;
+    private Value value;
 
     @PlanningVariable(valueRangeProviderRefs = {"numberRange"},
-            strengthWeightFactoryClass = SudokuNumberStrengthWeightFactory.class)
-    public Number getNumber() {
-        return number;
+            strengthWeightFactoryClass = ValueStrengthWeightFactory.class)
+    public Value getValue() {
+        return value;
     }
 
-    public void setNumber(Number number) {
-        this.number = number;
+    public void setValue(Value value) {
+        this.value = value;
     }
 
     public Column getColumn() {
@@ -69,7 +74,16 @@ public class SudokuNumber extends AbstractPersistable {
     public void setSquare(Square square) {
         this.square = square;
     }
-// ************************************************************************
+
+    public boolean isLocked() {
+        return locked;
+    }
+
+    public void setLocked(boolean locked) {
+        this.locked = locked;
+    }
+
+    // ************************************************************************
     // Complex methods
     // ************************************************************************
 
@@ -93,7 +107,7 @@ public class SudokuNumber extends AbstractPersistable {
 
     @Override
     public String toString() {
-        return (number == null ? "null" : number) + ":" + row + "@" + column + "@" + square;
+        return (value == null ? "null" : value) + ":" + row + "@" + column + "@" + square;
     }
 
 }

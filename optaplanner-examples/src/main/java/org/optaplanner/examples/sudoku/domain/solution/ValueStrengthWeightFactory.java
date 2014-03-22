@@ -19,13 +19,13 @@ package org.optaplanner.examples.sudoku.domain.solution;
 import org.apache.commons.lang.builder.CompareToBuilder;
 import org.optaplanner.core.impl.heuristic.selector.common.decorator.SelectionSorterWeightFactory;
 import org.optaplanner.examples.sudoku.domain.Sudoku;
-import org.optaplanner.examples.sudoku.domain.SudokuNumber;
+import org.optaplanner.examples.sudoku.domain.Value;
 
-public class SudokuNumberStrengthWeightFactory implements SelectionSorterWeightFactory<Sudoku, SudokuNumber> {
+public class ValueStrengthWeightFactory implements SelectionSorterWeightFactory<Sudoku, Value> {
 
-    public Comparable createSorterWeight(Sudoku sudoku, SudokuNumber sudokuNumber) {
-        int distanceFromMiddle = calculateDistanceFromMiddle(sudoku.getN(), sudokuNumber.getNumber().getValue());
-        return new SudokuNumberStrengthWeight(sudokuNumber, distanceFromMiddle);
+    public Comparable createSorterWeight(Sudoku sudoku, Value value) {
+        int distanceFromMiddle = calculateDistanceFromMiddle(sudoku.getN(), value.getValue());
+        return new NumberStrengthWeight(value, distanceFromMiddle);
     }
 
     private static int calculateDistanceFromMiddle(int n, int columnIndex) {
@@ -37,21 +37,21 @@ public class SudokuNumberStrengthWeightFactory implements SelectionSorterWeightF
         return distanceFromMiddle;
     }
 
-    public static class SudokuNumberStrengthWeight implements Comparable<SudokuNumberStrengthWeight> {
+    public static class NumberStrengthWeight implements Comparable<NumberStrengthWeight> {
 
-        private final SudokuNumber sudokuNumber;
+        private final Value value;
         private final int distanceFromMiddle;
 
-        public SudokuNumberStrengthWeight(SudokuNumber sudokuNumber, int distanceFromMiddle) {
-            this.sudokuNumber = sudokuNumber;
+        public NumberStrengthWeight(Value value, int distanceFromMiddle) {
+            this.value = value;
             this.distanceFromMiddle = distanceFromMiddle;
         }
 
-        public int compareTo(SudokuNumberStrengthWeight other) {
+        public int compareTo(NumberStrengthWeight other) {
             return new CompareToBuilder()
                     // The stronger sudokuNumbers are on the side, so they have a higher distance to the middle
                     .append(distanceFromMiddle, other.distanceFromMiddle)
-                    .append(sudokuNumber.getNumber(), other.sudokuNumber.getNumber())
+                    .append(value.getValue(), other.value.getValue())
                     .toComparison();
         }
 

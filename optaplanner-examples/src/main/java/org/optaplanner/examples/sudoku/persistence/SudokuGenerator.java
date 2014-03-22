@@ -20,12 +20,13 @@ import org.optaplanner.examples.common.app.LoggingMain;
 import org.optaplanner.examples.common.persistence.AbstractSolutionImporter;
 import org.optaplanner.examples.common.persistence.SolutionDao;
 import org.optaplanner.examples.sudoku.domain.*;
-import org.optaplanner.examples.sudoku.domain.Number;
+import org.optaplanner.examples.sudoku.domain.Value;
 
 import java.io.File;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class SudokuGenerator extends LoggingMain {
 
@@ -62,9 +63,10 @@ public class SudokuGenerator extends LoggingMain {
         sudoku.setN(n);
         sudoku.setColumnList(createColumnList(sudoku));
         sudoku.setRowList(createRowList(sudoku));
-        sudoku.setNumberList(createNumberList(sudoku));
+        sudoku.setValueList(createNumberList(sudoku));
         sudoku.setSquareList(createSquareList(sudoku));
-        sudoku.setSudokuNumberList(createSudokuNumberList(sudoku));
+        sudoku.setFigureList(createFigureList(sudoku));
+        lockRandomFigures(sudoku); //TODO doesn't guarantee solvable sudokus
         BigInteger possibleSolutionSize = BigInteger.valueOf(sudoku.getN()).pow(sudoku.getN());
         logger.info("Sudoku {} has {} numbers with a search space of {}.",
                 n, sudoku.getN(),
@@ -96,16 +98,16 @@ public class SudokuGenerator extends LoggingMain {
         return rowList;
     }
 
-    private List<Number> createNumberList(Sudoku sudoku) {
+    private List<Value> createNumberList(Sudoku sudoku) {
         int n = sudoku.getN();
-        List<Number> numberList = new ArrayList<Number>(n);
+        List<Value> valueList = new ArrayList<Value>(n);
         for (int i = 1; i <= n; i++) {
-            Number num = new Number();
+            Value num = new Value();
             num.setId((long) i);
             num.setValue(i);
-            numberList.add(num);
+            valueList.add(num);
         }
-        return numberList;
+        return valueList;
     }
 
     private List<Square> createSquareList(Sudoku sudoku) {
@@ -120,25 +122,38 @@ public class SudokuGenerator extends LoggingMain {
         return squareList;
     }
 
-    private List<SudokuNumber> createSudokuNumberList(Sudoku sudoku) {
+    private List<Figure> createFigureList(Sudoku sudoku) {
         int n = sudoku.getN();
         int nSquares = Sudoku.nSquares(n);
-        List<SudokuNumber> sudokuNumberList = new ArrayList<SudokuNumber>(n);
+        List<Figure> figureList = new ArrayList<Figure>(n);
         long id = 0;
         for (Row row : sudoku.getRowList()) {
             for (Column col : sudoku.getColumnList()) {
-                SudokuNumber sNumber = new SudokuNumber();
+                Figure sNumber = new Figure();
                 sNumber.setId(id);
                 id++;
                 sNumber.setRow(row);
                 sNumber.setColumn(col);
                 int squareId = (((row.getIndex())/nSquares)*nSquares) + (col.getIndex()/nSquares);
                 sNumber.setSquare(sudoku.getSquareList().get(squareId));
-                sNumber.setNumber(sudoku.getNumberList().get(row.getIndex()));
-                sudokuNumberList.add(sNumber);
+                sNumber.setValue(sudoku.getValueList().get(row.getIndex()));
+                sNumber.setLocked(false);
+                figureList.add(sNumber);
             }
         }
-        return sudokuNumberList;
+        return figureList;
+    }
+
+    private void lockRandomFigures(Sudoku sudoku) {
+        Random rand = new Random();
+        int counter = 0;
+        for(Figure fig : sudoku.getFigureList()) {
+            if(rand.nextFloat() < 0.15f) {
+                counter++;
+                fig.setLocked(true);
+            }
+        }
+        logger.info("Locked {} figures", counter);
     }
 
 }

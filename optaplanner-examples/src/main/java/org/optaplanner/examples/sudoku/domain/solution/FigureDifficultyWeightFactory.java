@@ -18,12 +18,12 @@ package org.optaplanner.examples.sudoku.domain.solution;
 
 import org.apache.commons.lang.builder.CompareToBuilder;
 import org.optaplanner.core.impl.heuristic.selector.common.decorator.SelectionSorterWeightFactory;
+import org.optaplanner.examples.sudoku.domain.Figure;
 import org.optaplanner.examples.sudoku.domain.Sudoku;
-import org.optaplanner.examples.sudoku.domain.SudokuNumber;
 
-public class SudokuNumberDifficultyWeightFactory implements SelectionSorterWeightFactory<Sudoku, SudokuNumber> {
+public class FigureDifficultyWeightFactory implements SelectionSorterWeightFactory<Sudoku, Figure> {
 
-    public Comparable createSorterWeight(Sudoku sudoku, SudokuNumber sNumber) {
+    public Comparable createSorterWeight(Sudoku sudoku, Figure sNumber) {
         int distanceFromMiddle = calculateDistanceFromMiddle(sudoku.getN(), sNumber.getColumnIndex());
         return new SudokuNumberDifficultyWeight(sNumber, distanceFromMiddle);
     }
@@ -39,10 +39,10 @@ public class SudokuNumberDifficultyWeightFactory implements SelectionSorterWeigh
 
     public static class SudokuNumberDifficultyWeight implements Comparable<SudokuNumberDifficultyWeight> {
 
-        private final SudokuNumber number;
+        private final Figure number;
         private final int distanceFromMiddle;
 
-        public SudokuNumberDifficultyWeight(SudokuNumber number, int distanceFromMiddle) {
+        public SudokuNumberDifficultyWeight(Figure number, int distanceFromMiddle) {
             this.number = number;
             this.distanceFromMiddle = distanceFromMiddle;
         }
@@ -53,7 +53,7 @@ public class SudokuNumberDifficultyWeightFactory implements SelectionSorterWeigh
                     .append(other.distanceFromMiddle, distanceFromMiddle) // Decreasing
                     // Tie breaker
                     .append(number.getColumnIndex(), other.number.getColumnIndex())
-                    .append(number.getNumber(), other.number.getNumber())
+                    .append(number.getValue(), other.number.getValue())
                     .toComparison();
         }
 

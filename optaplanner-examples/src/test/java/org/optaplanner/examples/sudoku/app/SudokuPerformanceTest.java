@@ -42,6 +42,7 @@ public class SudokuPerformanceTest extends SolverPerformanceTest {
     // ************************************************************************
 
     @Test(timeout = 600000)
+    @Ignore("Temporarily disabled")
     public void solveModel_16sudoku() {
         runSpeedTest(new File("data/sudoku/unsolved/16sudoku.xml"),
                 "0", EnvironmentMode.PRODUCTION);

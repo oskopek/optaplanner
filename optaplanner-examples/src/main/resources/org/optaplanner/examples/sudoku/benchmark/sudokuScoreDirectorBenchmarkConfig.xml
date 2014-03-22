@@ -13,7 +13,7 @@
     </problemBenchmarks>
     <solver>
       <solutionClass>org.optaplanner.examples.sudoku.domain.Sudoku</solutionClass>
-      <planningEntityClass>org.optaplanner.examples.sudoku.domain.SudokuNumber</planningEntityClass>
+      <planningEntityClass>org.optaplanner.examples.sudoku.domain.Figure</planningEntityClass>
       <scoreDirectorFactory>
         <scoreDefinitionType>SIMPLE</scoreDefinitionType>
         <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
