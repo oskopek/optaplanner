@@ -150,11 +150,13 @@ public class PlannerBenchmarkRunner implements PlannerBenchmark {
             TerminationConfig originalTerminationConfig = solverBenchmarkResult.getSolverConfig().getTerminationConfig();
             TerminationConfig tmpTerminationConfig = originalTerminationConfig == null
                     ? new TerminationConfig() : originalTerminationConfig.clone();
-            tmpTerminationConfig.shortenTimeMillisSpentLimit(timeLeft);
+            tmpTerminationConfig.shortenTimeMillisSpentLimit(timeLeft / 2);
             solverBenchmarkResult.getSolverConfig().setTerminationConfig(tmpTerminationConfig);
 
             try {
+                logger.debug("Starting solving...");
                 Solver solver = solverBenchmarkResult.getSolverConfig().buildSolver();
+                logger.debug("Starting solving...");
                 solver.solve(problemBenchmarkResult.readPlanningProblem());
             } catch (RuntimeException e) {
                 singleBenchmarkRunnerExceptionLogger.warn("The warmUp of singleBenchmark ("

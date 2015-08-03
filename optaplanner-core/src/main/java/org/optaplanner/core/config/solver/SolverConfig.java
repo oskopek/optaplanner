@@ -43,11 +43,15 @@ import org.optaplanner.core.impl.solver.random.DefaultRandomFactory;
 import org.optaplanner.core.impl.solver.random.RandomFactory;
 import org.optaplanner.core.impl.solver.recaller.BestSolutionRecaller;
 import org.optaplanner.core.impl.solver.termination.Termination;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.apache.commons.lang3.ObjectUtils.defaultIfNull;
 
 @XStreamAlias("solver")
 public class SolverConfig {
+
+    private static transient Logger logger = LoggerFactory.getLogger(SolverConfig.class);
 
     protected static final long DEFAULT_RANDOM_SEED = 0L;
 
@@ -180,8 +184,10 @@ public class SolverConfig {
         ScoreDirectorFactoryConfig scoreDirectorFactoryConfig_
                 = scoreDirectorFactoryConfig == null ? new ScoreDirectorFactoryConfig()
                 : scoreDirectorFactoryConfig;
+        logger.debug("Building score director factory...");
         InnerScoreDirectorFactory scoreDirectorFactory = scoreDirectorFactoryConfig_.buildScoreDirectorFactory(
                 environmentMode_, solutionDescriptor);
+        logger.debug("Finished building score director factory...");
         solver.setConstraintMatchEnabledPreference(environmentMode_.isAsserted());
         solver.setScoreDirectorFactory(scoreDirectorFactory);
 

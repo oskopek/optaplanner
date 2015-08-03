@@ -204,7 +204,10 @@ public class ScoreDirectorFactoryConfig {
                     + ") is the same or a superclass as the scoreDefinition's scoreClass ("
                     + scoreDefinition.getScoreClass() + ").");
         }
-        return buildScoreDirectorFactory(environmentMode, solutionDescriptor, scoreDefinition);
+        logger.debug("Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory");
+        InnerScoreDirectorFactory innerScoreDirectorFactory = buildScoreDirectorFactory(environmentMode, solutionDescriptor, scoreDefinition);
+        logger.debug("End ScoreDirectorFactoryConfig: buildScoreDirectorFactory");
+        return innerScoreDirectorFactory;
     }
 
     public ScoreDefinition buildScoreDefinition() {
@@ -272,7 +275,9 @@ public class ScoreDirectorFactoryConfig {
             SolutionDescriptor solutionDescriptor, ScoreDefinition scoreDefinition) {
         AbstractScoreDirectorFactory easyScoreDirectorFactory = buildEasyScoreDirectorFactory();
         AbstractScoreDirectorFactory incrementalScoreDirectorFactory = buildIncrementalScoreDirectorFactory();
+        logger.debug("Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory");
         AbstractScoreDirectorFactory droolsScoreDirectorFactory = buildDroolsScoreDirectorFactory();
+        logger.debug("End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory");
         AbstractScoreDirectorFactory scoreDirectorFactory;
         if (easyScoreDirectorFactory != null) {
             if (incrementalScoreDirectorFactory != null) {
@@ -397,7 +402,9 @@ public class ScoreDirectorFactoryConfig {
                 }
             }
             KieBuilder kieBuilder = kieServices.newKieBuilder(kieFileSystem);
+            logger.debug("Start ScoreDirectorFactoryConfig: kieBuilder.buildAll()");
             kieBuilder.buildAll();
+            logger.debug("End ScoreDirectorFactoryConfig: kieBuilder.buildAll()");
             Results results = kieBuilder.getResults();
             if (results.hasMessages(Message.Level.ERROR)) {
                 throw new IllegalStateException("There are errors in a score DRL:\n"

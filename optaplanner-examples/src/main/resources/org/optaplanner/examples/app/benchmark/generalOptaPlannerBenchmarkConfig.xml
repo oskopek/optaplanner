@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plannerBenchmark>
   <benchmarkDirectory>local/data/general</benchmarkDirectory>
-  <warmUpSecondsSpentLimit>30</warmUpSecondsSpentLimit>
+  <warmUpSecondsSpentLimit>10</warmUpSecondsSpentLimit>
 
   <inheritedSolverBenchmark>
     <problemBenchmarks>

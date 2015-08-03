@@ -1,0 +1,91 @@
+2015-08-03 14:19:56,009 [main] INFO  Benchmarking started: solverBenchmarkResultList size (6), parallelBenchmarkCount (1).
+2015-08-03 14:19:56,013 [main] INFO  ================================================================================
+2015-08-03 14:19:56,013 [main] INFO  Warm up started
+2015-08-03 14:19:56,013 [main] INFO  ================================================================================
+2015-08-03 14:19:56,013 [main] DEBUG Starting solving...
+2015-08-03 14:19:56,037 [main] DEBUG Building score director factory...
+2015-08-03 14:19:56,038 [main] DEBUG Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:19:56,038 [main] DEBUG Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+@@@2015-08-03 14:19:56,062 [main] DEBUG Start ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+@@@2015-08-03 14:19:56,864 [main] DEBUG End ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+2015-08-03 14:19:56,928 [main] DEBUG End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+2015-08-03 14:19:56,928 [main] DEBUG End ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:19:56,929 [main] DEBUG Finished building score director factory...
+2015-08-03 14:19:56,941 [main] DEBUG Starting solving...
+2015-08-03 14:19:57,155 [main] INFO  Solving started: time spent (147), best score (uninitialized/0hard/0soft), environment mode (REPRODUCIBLE), random (JDK with seed 0).
+2015-08-03 14:19:57,243 [main] DEBUG     CH step (0), time spent (235), score (0hard/-1100soft), selected move count (200), picked move (CloudProcess-429 {null -> CloudComputer-47}).
+...
+2015-08-03 14:19:58,363 [main] DEBUG     CH step (599), time spent (1355), score (0hard/-244360soft), selected move count (1), picked move (CloudProcess-3 {null -> CloudComputer-0}).
+2015-08-03 14:19:58,365 [main] INFO  Construction Heuristic phase (0) ended: step total (600), time spent (1357), best score (0hard/-244360soft).
+2015-08-03 14:19:58,382 [main] DEBUG     LS step (0), time spent (1374), score (0hard/-244360soft),     best score (0hard/-244360soft), accepted/selected move count (4/25), picked move (CloudProcess-207 {CloudComputer-79} <-> CloudProcess-16 {CloudComputer-0}).
+...
+2015-08-03 14:20:02,008 [main] DEBUG     LS step (15588), time spent (5000), score (0hard/-211190soft),     best score (0hard/-211190soft), accepted/selected move count (1/20), picked move (CloudProcess-195 {CloudComputer-186} <-> CloudProcess-66 {CloudComputer-109}).
+2015-08-03 14:20:02,008 [main] INFO  Local Search phase (1) ended: step total (15589), time spent (5000), best score (0hard/-211190soft).
+2015-08-03 14:20:02,008 [main] INFO  Solving ended: time spent (5000), best score (0hard/-211190soft), average calculate count per second (79262), environment mode (REPRODUCIBLE).
+2015-08-03 14:20:02,008 [main] DEBUG Starting solving...
+2015-08-03 14:20:02,008 [main] DEBUG Building score director factory...
+2015-08-03 14:20:02,008 [main] DEBUG Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:02,008 [main] DEBUG Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+@@@2015-08-03 14:20:02,009 [main] DEBUG Start ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+@@@2015-08-03 14:20:02,067 [main] DEBUG End ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+2015-08-03 14:20:02,075 [main] DEBUG End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+2015-08-03 14:20:02,075 [main] DEBUG End ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:02,075 [main] DEBUG Finished building score director factory...
+2015-08-03 14:20:02,075 [main] DEBUG Starting solving...
+2015-08-03 14:20:02,179 [main] INFO  Solving started: time spent (28), best score (uninitialized/0hard/0soft), environment mode (REPRODUCIBLE), random (JDK with seed 0).
+2015-08-03 14:20:02,203 [main] DEBUG     CH step (0), time spent (52), score (0hard/-1400soft), selected move count (800), picked move (CloudProcess-965 {null -> CloudComputer-14}).
+...
+2015-08-03 14:20:04,153 [main] DEBUG     CH step (582), time spent (2002), score (0hard/-376810soft), selected move count (228), picked move (CloudProcess-1554 {null -> CloudComputer-26}).
+2015-08-03 14:20:04,154 [main] INFO  Construction Heuristic phase (0) ended: step total (583), time spent (2003), best score (0hard/-376810soft).
+2015-08-03 14:20:04,159 [main] INFO  Solving ended: time spent (2007), best score (uninitialized/0hard/-376810soft), average calculate count per second (166657), environment mode (REPRODUCIBLE).
+2015-08-03 14:20:04,159 [main] DEBUG Starting solving...
+2015-08-03 14:20:04,159 [main] DEBUG Building score director factory...
+2015-08-03 14:20:04,159 [main] DEBUG Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+@@@2015-08-03 14:20:04,159 [main] DEBUG Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory // this benchmark doesn't build DRL rules at all
+@@@2015-08-03 14:20:04,159 [main] DEBUG End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+2015-08-03 14:20:04,159 [main] DEBUG End ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:04,159 [main] DEBUG Finished building score director factory...
+2015-08-03 14:20:04,161 [main] DEBUG Starting solving...
+2015-08-03 14:20:04,249 [main] INFO  MachineReassignment model_b_1 has 12 resources, 5 neighborhoods, 10 locations, 100 machines, 2512 services, 5000 processes and 0 balancePenalties with a search space of 10^10000.
+2015-08-03 14:20:04,249 [main] INFO  Imported: data/machinereassignment/import/model_b_1.txt
+2015-08-03 14:20:04,268 [main] INFO  Solving started: time spent (17), best score (uninitialized/-1237hard/0soft), environment mode (REPRODUCIBLE), random (JDK with seed 0).
+2015-08-03 14:20:04,292 [main] DEBUG     Custom step (0), time spent (41), score (0hard/-7644173180soft), new best score (0hard/-7644173180soft).
+2015-08-03 14:20:04,292 [main] INFO  Custom phase (0) ended: step total (1), time spent (41), best score (0hard/-7644173180soft).
+2015-08-03 14:20:04,352 [main] DEBUG     LS step (0), time spent (101), score (0hard/-7570136641soft), new best score (0hard/-7570136641soft), accepted/selected move count (2000/2000), picked move (MrProcess-2649 {MrMachine-18 -> MrMachine-77}).
+...
+2015-08-03 14:20:05,181 [main] DEBUG     LS step (31), time spent (930), score (0hard/-6303493635soft), new best score (0hard/-6303493635soft), accepted/selected move count (954/960), picked move (MrProcess-2355 {MrMachine-62 -> MrMachine-1}).
+2015-08-03 14:20:05,181 [main] INFO  Local Search phase (1) ended: step total (32), time spent (930), best score (0hard/-6303493635soft).
+2015-08-03 14:20:05,181 [main] INFO  Solving ended: time spent (930), best score (0hard/-6303493635soft), average calculate count per second (67867), environment mode (REPRODUCIBLE).
+2015-08-03 14:20:05,181 [main] DEBUG Starting solving...
+2015-08-03 14:20:05,181 [main] DEBUG Building score director factory...
+2015-08-03 14:20:05,181 [main] DEBUG Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+@@@2015-08-03 14:20:05,181 [main] DEBUG Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory // this benchmark doesn't build DRL rules at all
+@@@2015-08-03 14:20:05,181 [main] DEBUG End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+2015-08-03 14:20:05,181 [main] DEBUG End ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:05,181 [main] DEBUG Finished building score director factory...
+2015-08-03 14:20:05,182 [main] DEBUG Starting solving...
+2015-08-03 14:20:12,402 [main] INFO  MachineReassignment model_b_10 has 3 resources, 5 neighborhoods, 100 locations, 5000 machines, 4896 services, 50000 processes and 1 balancePenalties with a search space of 10^184948.
+2015-08-03 14:20:12,402 [main] INFO  Imported: data/machinereassignment/import/model_b_10.txt
+2015-08-03 14:20:12,469 [main] INFO  Solving started: time spent (67), best score (uninitialized/-22133hard/-78326791950soft), environment mode (REPRODUCIBLE), random (JDK with seed 0).
+2015-08-03 14:20:12,630 [main] DEBUG     Custom step (0), time spent (228), score (0hard/-42220868760soft), new best score (0hard/-42220868760soft).
+2015-08-03 14:20:12,630 [main] INFO  Custom phase (0) ended: step total (1), time spent (228), best score (0hard/-42220868760soft).
+2015-08-03 14:20:12,847 [main] DEBUG     LS step (0), time spent (445), score (0hard/-42199904411soft), new best score (0hard/-42199904411soft), accepted/selected move count (1698/1698), picked move (MrProcess-3075 {MrMachine-1693 -> MrMachine-1052}).
+2015-08-03 14:20:12,847 [main] INFO  Local Search phase (1) ended: step total (1), time spent (445), best score (0hard/-42199904411soft).
+2015-08-03 14:20:12,847 [main] INFO  Solving ended: time spent (445), best score (0hard/-42199904411soft), average calculate count per second (3824), environment mode (REPRODUCIBLE).
+2015-08-03 14:20:12,847 [main] INFO  ================================================================================
+2015-08-03 14:20:12,847 [main] INFO  Warm up ended
+2015-08-03 14:20:12,847 [main] INFO  ================================================================================
+2015-08-03 14:20:13,010 [pool-2-thread-1] DEBUG Building score director factory...
+2015-08-03 14:20:13,010 [pool-2-thread-1] DEBUG Start ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:13,010 [pool-2-thread-1] DEBUG Start ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+@@@2015-08-03 14:20:13,011 [pool-2-thread-1] DEBUG Start ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+@@@2015-08-03 14:20:13,061 [pool-2-thread-1] DEBUG End ScoreDirectorFactoryConfig: kieBuilder.buildAll()
+2015-08-03 14:20:13,067 [pool-2-thread-1] DEBUG End ScoreDirectorFactoryConfig: buildDroolsScoreDirectorFactory
+2015-08-03 14:20:13,067 [pool-2-thread-1] DEBUG End ScoreDirectorFactoryConfig: buildScoreDirectorFactory
+2015-08-03 14:20:13,067 [pool-2-thread-1] DEBUG Finished building score director factory...
+2015-08-03 14:20:13,074 [pool-2-thread-1] INFO  Solving started: time spent (7), best score (uninitialized/0hard/0soft), environment mode (REPRODUCIBLE), random (JDK with seed 0).
+2015-08-03 14:20:13,083 [pool-2-thread-1] DEBUG     CH step (0), time spent (16), score (0hard/-1100soft), selected move count (200), picked move (CloudProcess-429 {null -> CloudComputer-47}).
+...
+2015-08-03 14:20:13,566 [pool-2-thread-1] DEBUG     CH step (599), time spent (499), score (0hard/-244360soft), selected move count (1), picked move (CloudProcess-3 {null -> CloudComputer-0}).
+2015-08-03 14:20:13,567 [pool-2-thread-1] INFO  Construction Heuristic phase (0) ended: step total (600), time spent (500), best score (0hard/-244360soft).
+2015-08-03 14:20:13,571 [pool-2-thread-1] DEBUG     LS step (0), time spent (504), score (0hard/-244360soft),     best score (0hard/-244360soft), accepted/selected move count (4/25), picked move (CloudProcess-207 {CloudComputer-79} ...
