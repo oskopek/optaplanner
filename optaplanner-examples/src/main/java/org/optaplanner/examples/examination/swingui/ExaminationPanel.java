@@ -37,6 +37,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 
+import org.optaplanner.benchmark.impl.aggregator.swingui.SwingUtils;
 import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.examples.common.swingui.SolutionPanel;
 import org.optaplanner.examples.common.swingui.SolverAndPersistenceFrame;
@@ -214,6 +215,7 @@ public class ExaminationPanel extends SolutionPanel {
         JButton button = new JButton(new ExamAction(exam));
         button.setMargin(new Insets(0, 0, 0, 0));
         button.setBackground(color);
+        button.setUI(new SwingUtils.ColorButtonUI(color));
         if (exam instanceof FollowingExam) {
             button.setForeground(TangoColorFactory.ALUMINIUM_5);
         }

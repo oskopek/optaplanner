@@ -36,6 +36,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import org.optaplanner.benchmark.impl.aggregator.swingui.SwingUtils;
 import org.optaplanner.examples.common.swingui.TangoColorFactory;
 import org.optaplanner.examples.common.swingui.components.LabeledComboBoxRenderer;
 import org.optaplanner.examples.nurserostering.domain.Employee;
@@ -201,6 +202,7 @@ public class EmployeePanel extends JPanel {
         }
         int colorIndex = shift.getShiftType().getIndex() % TangoColorFactory.SEQUENCE_1.length;
         shiftAssignmentButton.setBackground(TangoColorFactory.SEQUENCE_1[colorIndex]);
+        shiftAssignmentButton.setUI(new SwingUtils.ColorButtonUI(TangoColorFactory.SEQUENCE_1[colorIndex]));
         shiftPanel.add(shiftAssignmentButton);
         shiftPanel.repaint();
         shiftAssignmentButtonMap.put(shiftAssignment, shiftAssignmentButton);

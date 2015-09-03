@@ -34,6 +34,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 
+import org.optaplanner.benchmark.impl.aggregator.swingui.SwingUtils;
 import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.examples.common.swingui.CommonIcons;
 import org.optaplanner.examples.common.swingui.SolutionPanel;
@@ -225,6 +226,7 @@ public class CurriculumCoursePanel extends SolutionPanel {
         JButton button = new JButton(new LectureAction(lecture));
         button.setMargin(new Insets(0, 0, 0, 0));
         button.setBackground(color);
+        button.setUI(new SwingUtils.ColorButtonUI(color));
         if (lecture.isLocked()) {
             button.setIcon(CommonIcons.LOCKED_ICON);
         }

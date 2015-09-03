@@ -17,14 +17,21 @@
 package org.optaplanner.benchmark.impl.aggregator.swingui;
 
 import java.util.Enumeration;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.ButtonModel;
+import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.FontUIResource;
+import javax.swing.plaf.basic.BasicButtonUI;
 
 import org.apache.commons.lang3.SystemUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// TODO move to optaplanner-swingwb, the Swing version of optaplanner-wb (which doesn't exist yet either)
 public class SwingUtils {
 
     private static final Logger logger = LoggerFactory.getLogger(SwingUtils.class);
@@ -86,6 +93,34 @@ public class SwingUtils {
                 FontUIResource fontUIResource = (FontUIResource) value;
                 UIManager.put(key, fontUIResource.deriveFont(fontUIResource.getSize() * multiplier));
             }
+        }
+    }
+
+    public static class ColorButtonUI extends BasicButtonUI
+    {
+
+        private Color background;
+
+        public ColorButtonUI(Color background) {
+            this.background = background;
+        }
+
+        public void paint ( Graphics g, JComponent c )
+        {
+            JButton myButton = ( JButton ) c;
+            ButtonModel buttonModel = myButton.getModel ();
+
+            if ( buttonModel.isPressed () || buttonModel.isSelected () )
+            {
+                g.setColor ( Color.GRAY );
+            }
+            else
+            {
+                g.setColor ( background );
+            }
+            g.fillRect ( 0, 0, c.getWidth (), c.getHeight () );
+
+            super.paint ( g, c );
         }
     }
 
