@@ -21,6 +21,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.FontUIResource;
 
+import org.apache.commons.lang3.SystemUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +33,20 @@ public class SwingUtils {
         // increaseDefaultFont(1.5F);
         String lookAndFeelName = "Metal"; // "Nimbus" is nicer but incompatible
         Exception lookAndFeelException;
+        String os = SystemUtils.OS_NAME.toLowerCase();
+        logger.debug("{}, {}, {}", SystemUtils.OS_ARCH, SystemUtils.OS_NAME, SystemUtils.OS_VERSION);
         try {
+            if (os.contains("linux")) {
+                lookAndFeelName = "GTK+";
+            } else if (os.contains("macintosh")) {
+                lookAndFeelName = "Macintosh";
+            } else if (os.contains("windows xp")) {
+                lookAndFeelName = "Windows XP";
+            } else if (os.contains("windows vista")) {
+                lookAndFeelName = "Windows Vista";
+            } else if (os.contains("windows")) {
+                lookAndFeelName = "Windows";
+            }
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if (lookAndFeelName.equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
@@ -47,6 +61,17 @@ public class SwingUtils {
         } catch (InstantiationException e) {
             lookAndFeelException = e;
         } catch (IllegalAccessException e) {
+            lookAndFeelException = e;
+        }
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e) {
+            lookAndFeelException = e;
+        } catch (InstantiationException e) {
+            lookAndFeelException = e;
+        } catch (IllegalAccessException e) {
+            lookAndFeelException = e;
+        } catch (UnsupportedLookAndFeelException e) {
             lookAndFeelException = e;
         }
         logger.warn("Could not switch to lookAndFeel (" + lookAndFeelName + "). Layout might be incorrect.",
