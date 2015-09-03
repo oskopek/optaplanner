@@ -41,7 +41,9 @@ public class SwingUtils {
         String lookAndFeelName = "Metal"; // "Nimbus" is nicer but incompatible
         Exception lookAndFeelException;
         String os = SystemUtils.OS_NAME.toLowerCase();
-        logger.debug("{}, {}, {}", SystemUtils.OS_ARCH, SystemUtils.OS_NAME, SystemUtils.OS_VERSION);
+        logger.debug("{}, {}, {}", SystemUtils.OS_ARCH, SystemUtils.OS_NAME, SystemUtils.OS_VERSION); // OOO: Test for regressions side by side, then test on windows and mac, test on full build on win and mac
+        // http://stackoverflow.com/questions/9146063/background-color-and-gtk-look-and-feel
+        // http://stackoverflow.com/questions/3420311/java-swing-button-colors/3420431#3420431
         try {
             if (os.contains("linux")) {
                 lookAndFeelName = "GTK+";
