@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <title>OptaPlanner webexamples: vehicle routing with leaflet.js</title>
-  <link href="<%=application.getContextPath()%>/website/leaflet/leaflet.css" rel="stylesheet">
+  <link rel='stylesheet' href='<%= new org.webjars.WebJarAssetLocator().getFullPath("css/leaflet.css") %>'>
   <link href="<%=application.getContextPath()%>/vehiclerouting/vehicleRouting.css" rel="stylesheet">
   <jsp:include page="/common/head.jsp"/>
 </head>
@@ -35,7 +35,7 @@
 </div>
 
 <jsp:include page="/common/foot.jsp"/>
-<script src="<%=application.getContextPath()%>/website/leaflet/leaflet.js"></script>
+<script type='text/javascript' src='<%= new org.webjars.WebJarAssetLocator().getFullPath("js/leaflet.js") %>'></script>
 <script type="text/javascript">
   var map;
   var vehicleRouteLayerGroup;

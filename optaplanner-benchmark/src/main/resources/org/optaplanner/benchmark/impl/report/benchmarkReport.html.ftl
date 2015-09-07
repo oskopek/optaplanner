@@ -1,14 +1,16 @@
 <#-- @ftlvariable name="benchmarkReport" type="org.optaplanner.benchmark.impl.report.BenchmarkReport" -->
 <#-- @ftlvariable name="reportHelper" type="org.optaplanner.benchmark.impl.report.ReportHelper" -->
+<#assign jqueryVersion = "2.1.4">
+<#assign bootstrapVersion = "3.3.5">
+<#assign prettifyVersion = "4-Mar-2013">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>${benchmarkReport.plannerBenchmarkResult.name} Planner benchmark report</title>
-    <link href="twitterbootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="twitterbootstrap/css/bootstrap-responsive.css" rel="stylesheet"/>
-    <link href="twitterbootstrap/css/prettify.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="webjars/bootstrap/${bootstrapVersion}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="webjars/prettify/${prettifyVersion}/prettify.css">
     <link href="website/css/benchmarkReport.css" rel="stylesheet"/>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -694,9 +696,9 @@
     </div>
 </div>
 
-<script src="twitterbootstrap/js/jquery.js"></script>
-<script src="twitterbootstrap/js/bootstrap.js"></script>
-<script src="twitterbootstrap/js/prettify.js"></script>
+<script type="text/javascript" src="webjars/jquery/${jqueryVersion}/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/${bootstrapVersion}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="webjars/prettify/${prettifyVersion}/prettify.js"></script>
 <script>
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
