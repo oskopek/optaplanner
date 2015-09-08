@@ -64,3 +64,9 @@
 .tooltip-inner {
     max-width: none;
 }
+
+.label-as-badge {
+    border-radius: 1em;
+    padding: 3px 7px;
+    font-weight: bold;
+}

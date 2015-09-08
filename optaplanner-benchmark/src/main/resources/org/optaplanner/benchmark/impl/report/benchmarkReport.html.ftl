@@ -17,35 +17,35 @@
 </head>
 <#macro addSolverBenchmarkBadges solverBenchmarkResult>
     <#if !solverBenchmarkResult.ranking??>
-        <span class="badge badge-important" data-toggle="tooltip" title="Failed benchmark">F</span>
+        <span class="label label-important label-as-badge" data-toggle="tooltip" title="Failed benchmark">F</span>
     <#else>
         <#if solverBenchmarkResult.favorite>
-            <span class="badge badge-success">${solverBenchmarkResult.ranking}</span>
+            <span class="label label-success label-as-badge">${solverBenchmarkResult.ranking}</span>
         <#else>
-            <span class="badge">${solverBenchmarkResult.ranking}</span>
+            <span class="label label-default label-as-badge">${solverBenchmarkResult.ranking}</span>
         </#if>
 
         <#if solverBenchmarkResult.hasAnyUninitializedSolution()>
-            <span class="badge badge-important" data-toggle="tooltip" title="Has an uninitialized solution">!</span>
+            <span class="label label-important label-as-badge" data-toggle="tooltip" title="Has an uninitialized solution">!</span>
         <#elseif solverBenchmarkResult.hasAnyInfeasibleScore()>
-            <span class="badge badge-warning" data-toggle="tooltip" title="Has an infeasible score">!</span>
+            <span class="label label-warning label-as-badge" data-toggle="tooltip" title="Has an infeasible score">!</span>
         </#if>
     </#if>
 </#macro>
 <#macro addSingleBenchmarkBadges singleBenchmarkResult>
     <#if !singleBenchmarkResult.ranking??>
-        <span class="badge badge-important" data-toggle="tooltip" title="Failed benchmark">F</span>
+        <span class="label label-important label-as-badge" data-toggle="tooltip" title="Failed benchmark">F</span>
     <#else>
         <#if singleBenchmarkResult.winner>
-            <span class="badge badge-success">${singleBenchmarkResult.ranking}</span>
+            <span class="label label-success label-as-badge">${singleBenchmarkResult.ranking}</span>
         <#else>
-            <span class="badge">${singleBenchmarkResult.ranking}</span>
+            <span class="label label-default label-as-badge">${singleBenchmarkResult.ranking}</span>
         </#if>
 
         <#if !singleBenchmarkResult.initialized>
-            <span class="badge badge-important" data-toggle="tooltip" title="Uninitialized solution">!</span>
+            <span class="label label-important label-as-badge" data-toggle="tooltip" title="Uninitialized solution">!</span>
         <#elseif !singleBenchmarkResult.scoreFeasible>
-            <span class="badge badge-warning" data-toggle="tooltip" title="Infeasible score">!</span>
+            <span class="label label-warning label-as-badge" data-toggle="tooltip" title="Infeasible score">!</span>
         </#if>
     </#if>
 </#macro>
