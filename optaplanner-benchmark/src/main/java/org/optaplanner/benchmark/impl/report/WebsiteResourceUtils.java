@@ -28,23 +28,24 @@ public class WebsiteResourceUtils {
 
     private static final String RESOURCE_NAMESPACE = "/org/optaplanner/benchmark/impl/report/";
 
+    private static final String JQUERY_VERSION = "2.1.4";
+    private static final String BOOTSTRAP_VERSION = "3.3.5";
+    private static final String PRETTIFY_VERSION = "4-Mar-2013";
+
     public static void copyResourcesTo(File benchmarkReportDirectory) {
         // Twitter Bootstrap
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-responsive.css");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-responsive.min.css");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.css");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.min.css");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/prettify.css");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/img/glyphicons-halflings-white.png");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/img/glyphicons-halflings.png");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/bootstrap.js");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/js/bootstrap.min.js");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/jquery.js");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/js/jquery.min.js");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/prettify.js");
+        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/css/bootstrap.min.css");
+        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/img/glyphicons-halflings-white.png");
+        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/img/glyphicons-halflings.png");
+        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/js/bootstrap.min.js");
+        // JQuery
+        copyResource(benchmarkReportDirectory, "webjars/jquery/" + JQUERY_VERSION + "/js/jquery.min.js");
+        // Prettify
+        copyResource(benchmarkReportDirectory, "webjars/prettify/" + PRETTIFY_VERSION + "/css/prettify.css");
+        copyResource(benchmarkReportDirectory, "webjars/prettify/" + PRETTIFY_VERSION + "/js/prettify.js");
         // Website resources
-        copyResource(benchmarkReportDirectory, "website/css/benchmarkReport.css");
-        copyResource(benchmarkReportDirectory, "website/img/optaPlannerLogo.png");
+        copyResource(benchmarkReportDirectory, RESOURCE_NAMESPACE + "website/css/benchmarkReport.css");
+        copyResource(benchmarkReportDirectory, RESOURCE_NAMESPACE + "website/img/optaPlannerLogo.png");
     }
 
     private static void copyResource(File benchmarkReportDirectory, String websiteResource) {
@@ -52,7 +53,7 @@ public class WebsiteResourceUtils {
         InputStream in = null;
         OutputStream out = null;
         try {
-            in = WebsiteResourceUtils.class.getResourceAsStream(RESOURCE_NAMESPACE + websiteResource);
+            in = WebsiteResourceUtils.class.getResourceAsStream(websiteResource);
             if (in == null) {
                 throw new IllegalStateException("The websiteResource (" + websiteResource
                         + ") does not exist.");
