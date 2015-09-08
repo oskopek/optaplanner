@@ -23,6 +23,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import org.apache.commons.io.IOUtils;
+import org.webjars.WebJarAssetLocator;
 
 public class WebsiteResourceUtils {
 
@@ -33,16 +34,17 @@ public class WebsiteResourceUtils {
     private static final String PRETTIFY_VERSION = "4-Mar-2013";
 
     public static void copyResourcesTo(File benchmarkReportDirectory) {
+        WebJarAssetLocator locator = new WebJarAssetLocator();
         // Twitter Bootstrap
-        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/css/bootstrap.min.css");
-        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/img/glyphicons-halflings-white.png");
-        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/img/glyphicons-halflings.png");
-        copyResource(benchmarkReportDirectory, "webjars/bootstrap/" + BOOTSTRAP_VERSION + "/js/bootstrap.min.js");
+        copyResource(benchmarkReportDirectory, locator.getFullPath("bootstrap.min.css"));
+        copyResource(benchmarkReportDirectory, locator.getFullPath("img/glyphicons-halflings-white.png"));
+        copyResource(benchmarkReportDirectory, locator.getFullPath("img/glyphicons-halflings.png"));
+        copyResource(benchmarkReportDirectory, locator.getFullPath("js/bootstrap.min.js"));
         // JQuery
-        copyResource(benchmarkReportDirectory, "webjars/jquery/" + JQUERY_VERSION + "/js/jquery.min.js");
+        copyResource(benchmarkReportDirectory, locator.getFullPath("jquery.min.js"));
         // Prettify
-        copyResource(benchmarkReportDirectory, "webjars/prettify/" + PRETTIFY_VERSION + "/css/prettify.css");
-        copyResource(benchmarkReportDirectory, "webjars/prettify/" + PRETTIFY_VERSION + "/js/prettify.js");
+        copyResource(benchmarkReportDirectory, locator.getFullPath("css/prettify.css"));
+        copyResource(benchmarkReportDirectory, locator.getFullPath("js/prettify.js"));
         // Website resources
         copyResource(benchmarkReportDirectory, RESOURCE_NAMESPACE + "website/css/benchmarkReport.css");
         copyResource(benchmarkReportDirectory, RESOURCE_NAMESPACE + "website/img/optaPlannerLogo.png");
