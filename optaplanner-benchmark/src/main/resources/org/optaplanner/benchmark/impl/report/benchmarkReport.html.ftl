@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>${benchmarkReport.plannerBenchmarkResult.name} Planner benchmark report</title>
-    <link href="twitterbootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="twitterbootstrap/css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="twitterbootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="twitterbootstrap/css/prettify.css" rel="stylesheet"/>
     <link href="website/css/benchmarkReport.css" rel="stylesheet"/>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -694,8 +693,8 @@
     </div>
 </div>
 
-<script src="twitterbootstrap/js/jquery.js"></script>
-<script src="twitterbootstrap/js/bootstrap.js"></script>
+<script src="twitterbootstrap/js/jquery.min.js"></script>
+<script src="twitterbootstrap/js/bootstrap.min.js"></script>
 <script src="twitterbootstrap/js/prettify.js"></script>
 <script>
 $(function () {
