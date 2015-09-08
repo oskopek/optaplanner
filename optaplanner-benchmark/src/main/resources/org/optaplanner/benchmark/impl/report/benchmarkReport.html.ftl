@@ -88,7 +88,7 @@
                     <ul class="nav nav-sidebar">
                         <li><a href="#summary">Summary</a></li>
                         <li>
-                            <ul class="nav nav-sidebar">
+                            <ul class="nav nav-sidebar sidebar-indented">
                                 <li><a href="#summary_result">Result</a></li>
                                 <li><a href="#summary_performance">Performance</a></li>
                             </ul>
@@ -96,7 +96,7 @@
                         <li><hr></li>
                         <li><a href="#problemBenchmarkResult">Problem benchmarks</a></li>
                         <li>
-                            <ul class="nav nav-sidebar">
+                            <ul class="nav nav-sidebar sidebar-indented">
                             <#list benchmarkReport.plannerBenchmarkResult.unifiedProblemBenchmarkResultList as problemBenchmarkResult>
                                 <li><a href="#problemBenchmark_${problemBenchmarkResult.anchorId}">${problemBenchmarkResult.name}</a></li>
                             </#list>
@@ -105,7 +105,7 @@
                         <li><hr></li>
                         <li><a href="#solverBenchmarkResult">Solver benchmarks</a></li>
                         <li>
-                            <ul class="nav nav-sidebar">
+                            <ul class="nav nav-sidebar sidebar-indented">
                             <#list benchmarkReport.plannerBenchmarkResult.solverBenchmarkResultList as solverBenchmarkResult>
                                 <li><a href="#solverBenchmark_${solverBenchmarkResult.anchorId}">${solverBenchmarkResult.name}&nbsp;<@addSolverBenchmarkBadges solverBenchmarkResult=solverBenchmarkResult/></a></li>
                             </#list>

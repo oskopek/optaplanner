@@ -70,3 +70,7 @@
     padding: 3px 7px;
     font-weight: bold;
 }
+
+.sidebar-indented {
+    margin-left: 20px;
+}
