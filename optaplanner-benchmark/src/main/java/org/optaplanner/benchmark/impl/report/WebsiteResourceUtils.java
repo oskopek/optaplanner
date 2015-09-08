@@ -30,17 +30,23 @@ public class WebsiteResourceUtils {
 
     public static void copyResourcesTo(File benchmarkReportDirectory) {
         // Twitter Bootstrap
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-responsive.css");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-responsive.min.css");
         copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.css");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.min.css");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.css.map");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap.min.css");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-theme.css");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-theme.css.map");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/css/bootstrap-theme.min.css");
         copyResource(benchmarkReportDirectory, "twitterbootstrap/css/prettify.css");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/img/glyphicons-halflings-white.png");
-        copyResource(benchmarkReportDirectory, "twitterbootstrap/img/glyphicons-halflings.png");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/fonts/glyphicons-halflings-regular.eot");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/fonts/glyphicons-halflings-regular.svg");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/fonts/glyphicons-halflings-regular.ttf");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/fonts/glyphicons-halflings-regular.woff");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/fonts/glyphicons-halflings-regular.woff2");
         copyResource(benchmarkReportDirectory, "twitterbootstrap/js/bootstrap.js");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/js/bootstrap.min.js");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/bootstrap.min.js");
         copyResource(benchmarkReportDirectory, "twitterbootstrap/js/jquery.js");
-        // copyResource(benchmarkReportDirectory, "twitterbootstrap/js/jquery.min.js");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/jquery.min.js");
+        copyResource(benchmarkReportDirectory, "twitterbootstrap/js/npm.js");
         copyResource(benchmarkReportDirectory, "twitterbootstrap/js/prettify.js");
         // Website resources
         copyResource(benchmarkReportDirectory, "website/css/benchmarkReport.css");
