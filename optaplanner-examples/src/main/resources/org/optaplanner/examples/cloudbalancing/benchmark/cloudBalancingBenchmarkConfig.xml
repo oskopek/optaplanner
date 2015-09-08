@@ -52,7 +52,7 @@
         <initializingScoreTrend>ONLY_DOWN/ONLY_DOWN</initializingScoreTrend>
       </scoreDirectorFactory>
       <termination>
-        <minutesSpentLimit>5</minutesSpentLimit>
+        <secondsSpentLimit>5</secondsSpentLimit>
       </termination>
     </solver>
   </inheritedSolverBenchmark>
