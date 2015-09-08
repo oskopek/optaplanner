@@ -139,7 +139,7 @@
 
                     <section id="summary_result">
                         <h2>Result summary</h2>
-                        <div class="tabbable">
+                        <div class="tabbable paired" id="summary_result_tabbable">
                             <ul class="nav nav-pills">
                                 <li class="active">
                                     <a href="#summary_bestScore" data-toggle="tab">Best score</a>
@@ -296,7 +296,7 @@
 
                     <section id="summary_performance">
                         <h2>Performance summary</h2>
-                        <div class="tabbable">
+                        <div class="tabbable paired" id="summary_performance_tabbable">
                             <ul class="nav nav-pills">
                                 <li class="active">
                                     <a href="#summary_averageCalculateCount" data-toggle="tab">Average calculation count</a>
@@ -702,6 +702,21 @@
 <script>
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(".paired > ul > li").click(function(event){ // TODO http://www.bootply.com/vfEyXxnOCE
+    $(this).children().each(function(event){
+      event.stopPropagation();
+      $(this).click();
+    });
+    var tabbableId = $(this).parent().parent().attr("id");
+    var tabIndex = $(this).index();
+    $(".paired > ul > li").each(function(){
+        if ($(this).index() === tabIndex && $(this).parent().parent().attr("id") === tabbableId) {
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+        }
+    })
 })
 </script>
 </body>
