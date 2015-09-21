@@ -40,6 +40,7 @@
     </problemBenchmarks>
 
     <solver>
+      <environmentMode>PRODUCTION</environmentMode>
       <!--<environmentMode>FAST_ASSERT</environmentMode>-->
       <solutionClass>org.optaplanner.examples.machinereassignment.domain.MachineReassignment</solutionClass>
       <entityClass>org.optaplanner.examples.machinereassignment.domain.MrProcessAssignment</entityClass>
@@ -53,6 +54,7 @@
         <minutesSpentLimit>5</minutesSpentLimit>
       </termination>
     </solver>
+    <subSingleCount>6</subSingleCount>
   </inheritedSolverBenchmark>
 
   <solverBenchmark>
@@ -125,26 +127,26 @@
       <!--</localSearch>-->
     <!--</solver>-->
   <!--</solverBenchmark>-->
-  <solverBenchmark>
-    <name>lateAcceptance1000</name>
-    <solver>
-      <customPhase>
-        <customPhaseCommandClass>org.optaplanner.examples.machinereassignment.solver.solution.initializer.ToOriginalMachineSolutionInitializer</customPhaseCommandClass>
-      </customPhase>
-      <localSearch>
-        <unionMoveSelector>
-          <changeMoveSelector/>
-          <swapMoveSelector/>
-        </unionMoveSelector>
-        <acceptor>
-          <lateAcceptanceSize>1000</lateAcceptanceSize>
-        </acceptor>
-        <forager>
-          <acceptedCountLimit>500</acceptedCountLimit>
-        </forager>
-      </localSearch>
-    </solver>
-  </solverBenchmark>
+  <!--<solverBenchmark>-->
+    <!--<name>lateAcceptance1000</name>-->
+    <!--<solver>-->
+      <!--<customPhase>-->
+        <!--<customPhaseCommandClass>org.optaplanner.examples.machinereassignment.solver.solution.initializer.ToOriginalMachineSolutionInitializer</customPhaseCommandClass>-->
+      <!--</customPhase>-->
+      <!--<localSearch>-->
+        <!--<unionMoveSelector>-->
+          <!--<changeMoveSelector/>-->
+          <!--<swapMoveSelector/>-->
+        <!--</unionMoveSelector>-->
+        <!--<acceptor>-->
+          <!--<lateAcceptanceSize>1000</lateAcceptanceSize>-->
+        <!--</acceptor>-->
+        <!--<forager>-->
+          <!--<acceptedCountLimit>500</acceptedCountLimit>-->
+        <!--</forager>-->
+      <!--</localSearch>-->
+    <!--</solver>-->
+  <!--</solverBenchmark>-->
   <solverBenchmark>
     <name>lateAcceptance2000</name>
     <solver>

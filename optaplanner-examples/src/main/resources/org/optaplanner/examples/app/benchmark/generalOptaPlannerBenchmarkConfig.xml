@@ -5,13 +5,15 @@
 
   <inheritedSolverBenchmark>
     <problemBenchmarks>
-      <problemStatisticType>BEST_SCORE</problemStatisticType>
+      <!--<problemStatisticType>BEST_SCORE</problemStatisticType>-->
     </problemBenchmarks>
     <solver>
+      <environmentMode>PRODUCTION</environmentMode>
       <termination>
         <minutesSpentLimit>5</minutesSpentLimit>
       </termination>
     </solver>
+    <subSingleCount>11</subSingleCount>
   </inheritedSolverBenchmark>
 
 
