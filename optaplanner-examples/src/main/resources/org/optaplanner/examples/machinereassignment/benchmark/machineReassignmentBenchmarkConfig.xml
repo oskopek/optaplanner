@@ -57,14 +57,14 @@
     <subSingleCount>6</subSingleCount>
   </inheritedSolverBenchmark>
 
-  <solverBenchmark>
-    <name>original</name>
-    <solver>
-      <customPhase>
-        <customPhaseCommandClass>org.optaplanner.examples.machinereassignment.solver.solution.initializer.ToOriginalMachineSolutionInitializer</customPhaseCommandClass>
-      </customPhase>
-    </solver>
-  </solverBenchmark>
+  <!--<solverBenchmark>-->
+    <!--<name>original</name>-->
+    <!--<solver>-->
+      <!--<customPhase>-->
+        <!--<customPhaseCommandClass>org.optaplanner.examples.machinereassignment.solver.solution.initializer.ToOriginalMachineSolutionInitializer</customPhaseCommandClass>-->
+      <!--</customPhase>-->
+    <!--</solver>-->
+  <!--</solverBenchmark>-->
   <solverBenchmark>
     <name>entityTabu7-2000</name>
     <solver>
