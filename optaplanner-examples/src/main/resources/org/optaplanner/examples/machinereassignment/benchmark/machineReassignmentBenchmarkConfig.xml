@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plannerBenchmark>
   <benchmarkDirectory>local/data/machinereassignment</benchmarkDirectory>
-  <!--<parallelBenchmarkCount>AUTO</parallelBenchmarkCount>-->
-  <warmUpSecondsSpentLimit>30</warmUpSecondsSpentLimit>
+  <parallelBenchmarkCount>AUTO</parallelBenchmarkCount>
+  <warmUpSecondsSpentLimit>0</warmUpSecondsSpentLimit>
 
   <inheritedSolverBenchmark>
     <problemBenchmarks>
@@ -18,23 +18,23 @@
       <!--<inputSolutionFile>data/machinereassignment/import/model_a2_4.txt</inputSolutionFile>-->
       <!--<inputSolutionFile>data/machinereassignment/import/model_a2_5.txt</inputSolutionFile>-->
       <inputSolutionFile>data/machinereassignment/import/model_b_1.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_2.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_3.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_4.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_5.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_6.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_7.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_8.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_9.txt</inputSolutionFile>
-      <inputSolutionFile>data/machinereassignment/import/model_b_10.txt</inputSolutionFile>
-      <!--<problemStatisticType>BEST_SCORE</problemStatisticType>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_2.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_3.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_4.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_5.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_6.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_7.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_8.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_9.txt</inputSolutionFile>-->
+      <!--<inputSolutionFile>data/machinereassignment/import/model_b_10.txt</inputSolutionFile>-->
+      <problemStatisticType>BEST_SCORE</problemStatisticType>
       <!--<problemStatisticType>STEP_SCORE</problemStatisticType>-->
       <!--<problemStatisticType>CALCULATE_COUNT_PER_SECOND</problemStatisticType>-->
       <!--<problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>-->
       <!--<problemStatisticType>MOVE_COUNT_PER_STEP</problemStatisticType>-->
       <!--<problemStatisticType>MEMORY_USE</problemStatisticType>-->
       <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_BEST_SCORE</singleStatisticType>-->
-      <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_STEP_SCORE</singleStatisticType>-->
+      <singleStatisticType>CONSTRAINT_MATCH_TOTAL_STEP_SCORE</singleStatisticType>
       <!--<singleStatisticType>PICKED_MOVE_TYPE_BEST_SCORE_DIFF</singleStatisticType>-->
       <!--<singleStatisticType>PICKED_MOVE_TYPE_STEP_SCORE_DIFF</singleStatisticType>-->
     </problemBenchmarks>
@@ -50,9 +50,10 @@
         <!--<scoreDrl>org/optaplanner/examples/machinereassignment/solver/machineReassignmentScoreRules.drl</scoreDrl>-->
       </scoreDirectorFactory>
       <termination>
-        <minutesSpentLimit>5</minutesSpentLimit>
+        <minutesSpentLimit>2</minutesSpentLimit>
       </termination>
     </solver>
+    <subSingleCount>2</subSingleCount>
   </inheritedSolverBenchmark>
 
   <solverBenchmark>
