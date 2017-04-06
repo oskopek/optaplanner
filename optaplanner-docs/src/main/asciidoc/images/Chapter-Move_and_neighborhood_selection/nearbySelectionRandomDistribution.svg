@@ -552,7 +552,7 @@
            y="161.80891"
            style="font-size:12px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          style="font-size:12px;text-align:center;text-anchor:middle"
-         id="flowPara4627">previousStandstill for A</flowPara></flowRoot>    <g
+         id="flowPara4627">prevAction for A</flowPara></flowRoot>    <g
        transform="translate(5e-6,-452.36218)"
        style="display:inline"
        id="g5524">
@@ -1451,7 +1451,7 @@
            width="190"
            id="rect4333" /></flowRegion><flowPara
          id="flowPara4335"
-         style="font-size:12px;text-align:center;text-anchor:middle">previousStandstill for A</flowPara></flowRoot>    <path
+         style="font-size:12px;text-align:center;text-anchor:middle">prevAction for A</flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
        id="path4349"
        d="m 400.5,138.75 0,200"
@@ -2661,7 +2661,7 @@
            y="161.80891"
            style="font-size:12px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          style="font-size:12px;text-align:center;text-anchor:middle"
-         id="flowPara6013">previousStandstill for A</flowPara></flowRoot>    <g
+         id="flowPara6013">prevAction for A</flowPara></flowRoot>    <g
        id="g5454">
       <path
          transform="matrix(0.24999975,0,0,0.24999975,95.676229,674.89227)"

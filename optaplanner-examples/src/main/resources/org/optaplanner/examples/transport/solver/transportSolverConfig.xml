@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+  <!--<environmentMode>FULL_ASSERT</environmentMode>-->
+  <solutionClass>org.optaplanner.examples.transport.domain.TransportSolution</solutionClass>
+  <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
+  <entityClass>org.optaplanner.examples.transport.domain.Veh</entityClass>
+  <entityClass>org.optaplanner.examples.transport.domain.Pkg</entityClass>
+
+  <scoreDirectorFactory>
+    <scoreDrl>org/optaplanner/examples/transport/solver/transportScoreRules.drl</scoreDrl>
+    <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+  </scoreDirectorFactory>
+
+  <termination>
+    <minutesSpentLimit>2</minutesSpentLimit>
+  </termination>
+  <constructionHeuristic>
+    <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+  </constructionHeuristic>
+  <localSearch>
+    <unionMoveSelector>
+      <changeMoveSelector>
+        <cacheType>PHASE</cacheType>
+        <selectionOrder>SHUFFLED</selectionOrder>
+      </changeMoveSelector>
+      <!--<swapMoveSelector>-->
+        <!--<cacheType>PHASE</cacheType>-->
+        <!--<selectionOrder>SHUFFLED</selectionOrder>-->
+      <!--</swapMoveSelector>-->
+      <tailChainSwapMoveSelector/>
+      <subChainChangeMoveSelector>
+        <subChainSelector>
+          <maximumSubChainSize>50</maximumSubChainSize>
+        </subChainSelector>
+        <selectReversingMoveToo>true</selectReversingMoveToo>
+      </subChainChangeMoveSelector>
+      <!--<subChainSwapMoveSelector>-->
+        <!--<selectReversingMoveToo>false</selectReversingMoveToo>-->
+      <!--</subChainSwapMoveSelector>-->
+      <!-- TODO use nearby selection to scale out -->
+    </unionMoveSelector>
+    <acceptor>
+      <lateAcceptanceSize>400</lateAcceptanceSize>
+    </acceptor>
+    <forager>
+      <acceptedCountLimit>1</acceptedCountLimit>
+    </forager>
+  </localSearch>
+</solver>

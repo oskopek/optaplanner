@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+  <benchmarkDirectory>local/data/transport</benchmarkDirectory>
+  <parallelBenchmarkCount>1</parallelBenchmarkCount>
+
+  <inheritedSolverBenchmark>
+    <problemBenchmarks>
+      <solutionFileIOClass>org.optaplanner.examples.transport.persistence.TransportFileIO</solutionFileIOClass>
+      <inputSolutionFile>data/transport/import/ipc08/p01.pddl.csp</inputSolutionFile>
+      <problemStatisticType>BEST_SCORE</problemStatisticType>
+      <!--<problemStatisticType>STEP_SCORE</problemStatisticType>-->
+      <!--<problemStatisticType>SCORE_CALCULATION_SPEED</problemStatisticType>-->
+      <!--<problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>-->
+      <!--<problemStatisticType>MOVE_COUNT_PER_STEP</problemStatisticType>-->
+      <!--<problemStatisticType>MEMORY_USE</problemStatisticType>-->
+      <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_BEST_SCORE</singleStatisticType>-->
+      <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_STEP_SCORE</singleStatisticType>-->
+      <!--<singleStatisticType>PICKED_MOVE_TYPE_BEST_SCORE_DIFF</singleStatisticType>-->
+      <!--<singleStatisticType>PICKED_MOVE_TYPE_STEP_SCORE_DIFF</singleStatisticType>-->
+    </problemBenchmarks>
+
+    <solver>
+      <solutionClass>org.optaplanner.examples.transport.domain.TransportSolution</solutionClass>
+      <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
+      <entityClass>org.optaplanner.examples.transport.domain.Veh</entityClass>
+      <entityClass>org.optaplanner.examples.transport.domain.Pkg</entityClass>
+
+      <scoreDirectorFactory>
+        <scoreDrl>org/optaplanner/examples/transport/solver/transportScoreRules.drl</scoreDrl>
+        <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+      </scoreDirectorFactory>
+
+      <termination>
+        <minutesSpentLimit>1</minutesSpentLimit>
+      </termination>
+    </solver>
+  </inheritedSolverBenchmark>
+  <solverBenchmark>
+    <name>Tabu Search 2</name>
+    <solver>
+        <constructionHeuristic>
+            <queuedEntityPlacer>
+                <entitySelector id="placerEntitySelector">
+                    <cacheType>PHASE</cacheType>
+                    <!--<selectionOrder>FIRST_FIT</selectionOrder>-->
+                    <!--<sorterManner>DECREASING_DIFFICULTY</sorterManner>-->
+                    <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
+                </entitySelector>
+                <changeMoveSelector>
+                    <entitySelector mimicSelectorRef="placerEntitySelector"/>
+                </changeMoveSelector>
+            </queuedEntityPlacer>
+        </constructionHeuristic>
+        <localSearch>
+        <unionMoveSelector>
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.Veh</entityClass>
+                </entitySelector>
+            </changeMoveSelector>
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.Pkg</entityClass>
+                </entitySelector>
+            </changeMoveSelector>
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
+                </entitySelector>
+            </swapMoveSelector>
+            <tailChainSwapMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
+                </entitySelector>
+            </tailChainSwapMoveSelector>
+            <!--<subChainChangeMoveSelector>-->
+            <!--<entitySelector>-->
+            <!--<entityClass>org.optaplanner.examples.transport.domain.BusStop</entityClass>-->
+            <!--</entitySelector>-->
+            <!--<selectReversingMoveToo>true</selectReversingMoveToo>-->
+            <!--</subChainChangeMoveSelector>-->
+            <!--<subChainSwapMoveSelector>-->
+            <!--<entitySelector>-->
+            <!--<entityClass>org.optaplanner.examples.transport.domain.BusStop</entityClass>-->
+            <!--</entitySelector>-->
+            <!--<selectReversingMoveToo>true</selectReversingMoveToo>-->
+            <!--</subChainSwapMoveSelector>-->
+        </unionMoveSelector>
+        <acceptor>
+            <lateAcceptanceSize>200</lateAcceptanceSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+        </localSearch>
+    </solver>
+  </solverBenchmark>
+</plannerBenchmark>

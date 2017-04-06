@@ -1,0 +1,53 @@
+/*
+ * Copyright 2011 Red Hat, Inc. and/or its affiliates.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.optaplanner.examples.tsp.solver;
+    dialect "java"
+
+import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScoreHolder;
+
+import org.optaplanner.examples.transport.domain.*;
+
+global HardSoftLongScoreHolder scoreHolder;
+
+rule "actionAllocationNotFilled"
+    when
+        $actionAllocation : ActionAllocation(actionn == null)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+//rule "driveNotApplicable"
+//    when
+//        $veh : Veh($index: index),
+//        $action : Drive($veh == veh, $loc : loc, $target : target),
+//        $actionAllocation : ActionAllocation(index == $index, $prevActionAllocation : prevActionAllocation, $prevActionAllocation != null, $action : actionn)
+//
+//    then
+//        scoreHolder.addHardConstraintMatch(kcontext, -1);
+//end
+
+// ############################################################################
+// Soft constraints
+// ############################################################################
+
+rule "costsOfActions"
+    when
+        $actionAllocation : ActionAllocation($action : actionn, actionn != null)
+    then
+        scoreHolder.addSoftConstraintMatch(kcontext, - $action.getCost());
+end
+

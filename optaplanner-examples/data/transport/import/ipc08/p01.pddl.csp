@@ -1,0 +1,28 @@
+NAME: transport-city-sequential-5nodes-1000size-2degree-100mindistance-2trucks-2packages-2008seed
+PLAN_LENGTH: 6
+LOCATIONS: 5
+city-loc-1
+city-loc-2
+city-loc-3
+city-loc-4
+city-loc-5
+ROADS: 12
+city-loc-1 city-loc-4 28
+city-loc-1 city-loc-5 35
+city-loc-2 city-loc-3 30
+city-loc-2 city-loc-5 18
+city-loc-3 city-loc-2 30
+city-loc-3 city-loc-5 24
+city-loc-4 city-loc-1 28
+city-loc-4 city-loc-5 32
+city-loc-5 city-loc-1 35
+city-loc-5 city-loc-2 18
+city-loc-5 city-loc-3 24
+city-loc-5 city-loc-4 32
+PACKAGES: 2
+package-1 1 city-loc-4 city-loc-5
+package-2 1 city-loc-4 city-loc-2
+VEHICLES: 2
+truck-1 2 city-loc-4
+truck-2 4 city-loc-5
+EOF

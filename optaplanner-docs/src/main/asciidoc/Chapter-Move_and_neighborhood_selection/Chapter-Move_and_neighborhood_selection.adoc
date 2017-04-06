@@ -317,7 +317,7 @@ Advanced configuration:
         ...
       </entitySelector>
       <valueSelector>
-        <variableName>previousStandstill</variableName>
+        <variableName>prevAction</variableName>
         ...
         <nearbySelection>...</nearbySelection>
       </valueSelector>
@@ -357,14 +357,14 @@ Advanced configuration:
       <entityClass>...Customer</entityClass>
       <subChainSelector>
         <valueSelector>
-          <variableName>previousStandstill</variableName>
+          <variableName>prevAction</variableName>
           ...
         </valueSelector>
         <minimumSubChainSize>2</minimumSubChainSize>
         <maximumSubChainSize>40</maximumSubChainSize>
       </subChainSelector>
       <valueSelector>
-        <variableName>previousStandstill</variableName>
+        <variableName>prevAction</variableName>
         ...
       </valueSelector>
       <selectReversingMoveToo>true</selectReversingMoveToo>
@@ -404,7 +404,7 @@ Advanced configuration:
       <entityClass>...Customer</entityClass>
       <subChainSelector>
         <valueSelector>
-          <variableName>previousStandstill</variableName>
+          <variableName>prevAction</variableName>
           ...
         </valueSelector>
         <minimumSubChainSize>2</minimumSubChainSize>
@@ -412,7 +412,7 @@ Advanced configuration:
       </subChainSelector>
       <secondarySubChainSelector>
         <valueSelector>
-          <variableName>previousStandstill</variableName>
+          <variableName>prevAction</variableName>
           ...
         </valueSelector>
         <minimumSubChainSize>2</minimumSubChainSize>

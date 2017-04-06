@@ -26,7 +26,7 @@ import org.optaplanner.examples.tsp.domain.solver.DomicileAngleVisitDifficultyWe
 import org.optaplanner.examples.tsp.domain.solver.DomicileDistanceStandstillStrengthWeightFactory;
 
 @PlanningEntity(difficultyWeightFactoryClass = DomicileAngleVisitDifficultyWeightFactory.class)
-@XStreamAlias("Visit")
+@XStreamAlias("Action")
 public class Visit extends AbstractPersistable implements Standstill {
 
     private Location location;
