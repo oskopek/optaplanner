@@ -167,12 +167,15 @@ public class TransportImporter extends AbstractTxtSolutionImporter<TransportSolu
             solution.setPickupList(pickups);
             solution.setDropList(drops);
 
+            ActionAllocation last = null;
             List<ActionAllocation> allocations = new ArrayList<>(planLength);
             for (int i = 0; i < planLength; i++) {
                 ActionAllocation allocation = new ActionAllocation();
                 allocation.setId(id++);
                 allocation.setIndex(i);
+                allocation.setPrevActionAllocation(last);
                 allocations.add(allocation);
+                last = allocation;
             }
 
             solution.setActionAllocationList(allocations);

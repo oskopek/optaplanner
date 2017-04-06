@@ -78,7 +78,6 @@ public class TransportSolution extends AbstractPersistable {
     }
 
     @PlanningEntityCollectionProperty
-    @ValueRangeProvider(id = "actionAllocs")
     public List<ActionAllocation> getActionAllocationList() {
         return actionAllocationList;
     }

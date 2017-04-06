@@ -31,7 +31,7 @@
       </scoreDirectorFactory>
 
       <termination>
-        <minutesSpentLimit>1</minutesSpentLimit>
+        <secondsSpentLimit>10</secondsSpentLimit>
       </termination>
     </solver>
   </inheritedSolverBenchmark>
@@ -53,11 +53,21 @@
         </constructionHeuristic>
         <localSearch>
         <unionMoveSelector>
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.Veh</entityClass>
+                </entitySelector>
+            </swapMoveSelector>
             <changeMoveSelector>
                 <entitySelector>
                     <entityClass>org.optaplanner.examples.transport.domain.Veh</entityClass>
                 </entitySelector>
             </changeMoveSelector>
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>org.optaplanner.examples.transport.domain.Pkg</entityClass>
+                </entitySelector>
+            </swapMoveSelector>
             <changeMoveSelector>
                 <entitySelector>
                     <entityClass>org.optaplanner.examples.transport.domain.Pkg</entityClass>
@@ -68,23 +78,11 @@
                     <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
                 </entitySelector>
             </swapMoveSelector>
-            <tailChainSwapMoveSelector>
+            <changeMoveSelector>
                 <entitySelector>
                     <entityClass>org.optaplanner.examples.transport.domain.ActionAllocation</entityClass>
                 </entitySelector>
-            </tailChainSwapMoveSelector>
-            <!--<subChainChangeMoveSelector>-->
-            <!--<entitySelector>-->
-            <!--<entityClass>org.optaplanner.examples.transport.domain.BusStop</entityClass>-->
-            <!--</entitySelector>-->
-            <!--<selectReversingMoveToo>true</selectReversingMoveToo>-->
-            <!--</subChainChangeMoveSelector>-->
-            <!--<subChainSwapMoveSelector>-->
-            <!--<entitySelector>-->
-            <!--<entityClass>org.optaplanner.examples.transport.domain.BusStop</entityClass>-->
-            <!--</entitySelector>-->
-            <!--<selectReversingMoveToo>true</selectReversingMoveToo>-->
-            <!--</subChainSwapMoveSelector>-->
+            </changeMoveSelector>
         </unionMoveSelector>
         <acceptor>
             <lateAcceptanceSize>200</lateAcceptanceSize>
