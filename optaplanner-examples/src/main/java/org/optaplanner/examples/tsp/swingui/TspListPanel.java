@@ -132,7 +132,7 @@ public class TspListPanel extends JPanel implements Scrollable {
             previousStandstillListField.addItem(tspSolution.getDomicile());
             previousStandstillListField.setSelectedItem(visit.getPreviousStandstill());
             int result = JOptionPane.showConfirmDialog(TspListPanel.this.getRootPane(), previousStandstillListField,
-                    "Action " + visit.getLocation() + " after", JOptionPane.OK_CANCEL_OPTION);
+                    "Visit " + visit.getLocation() + " after", JOptionPane.OK_CANCEL_OPTION);
             if (result == JOptionPane.OK_OPTION) {
                 Standstill toStandstill = (Standstill) previousStandstillListField.getSelectedItem();
                 tspPanel.doMove(visit, toStandstill);

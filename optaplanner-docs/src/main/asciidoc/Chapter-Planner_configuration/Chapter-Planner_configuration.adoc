@@ -928,11 +928,11 @@ public class Visit ... implements Standstill {
     @PlanningVariable(graphType = PlanningVariableGraphType.CHAINED,
         valueRangeProviderRefs = {"domicileRange", "visitRange"})
     public Standstill getPreviousStandstill() {
-        return prevAction;
+        return previousStandstill;
     }
 
-    public void setPreviousStandstill(Standstill prevAction) {
-        this.prevAction = prevAction;
+    public void setPreviousStandstill(Standstill previousStandstill) {
+        this.previousStandstill = previousStandstill;
     }
 
 }
@@ -941,7 +941,7 @@ public class Visit ... implements Standstill {
 Notice how two value range providers are usually combined:
 
 * The value range provider that holds the anchors, for example ``domicileList``.
-* The value range provider that holds the initialized planning entities, for example ``actionList``.
+* The value range provider that holds the initialized planning entities, for example ``visitList``.
 
 
 [[shadowVariable]]
@@ -1034,9 +1034,9 @@ public class Customer ... {
 
     @PlanningVariable(graphType = PlanningVariableGraphType.CHAINED, ...)
     public Standstill getPreviousStandstill() {
-        return prevAction;
+        return previousStandstill;
     }
-    public void setPreviousStandstill(Standstill prevAction) {...}
+    public void setPreviousStandstill(Standstill previousStandstill) {...}
 
 }
 ----
@@ -1048,7 +1048,7 @@ And the shadow side looks like this:
 @PlanningEntity
 public class Standstill {
 
-    @InverseRelationShadowVariable(sourceVariableName = "prevAction")
+    @InverseRelationShadowVariable(sourceVariableName = "previousStandstill")
     public Customer getNextCustomer() {
          return nextCustomer;
     }
@@ -1077,7 +1077,7 @@ Annotate the anchor property as a `@AnchorShadowVariable` annotation:
 @PlanningEntity
 public class Customer {
 
-    @AnchorShadowVariable(sourceVariableName = "prevAction")
+    @AnchorShadowVariable(sourceVariableName = "previousStandstill")
     public Vehicle getVehicle() {...}
     public void setVehicle(Vehicle vehicle) {...}
 
@@ -1097,11 +1097,11 @@ To define a custom shadow variable, write a custom ``VariableListener``: impleme
 ----
     @PlanningVariable(...)
     public Standstill getPreviousStandstill() {
-        return prevAction;
+        return previousStandstill;
     }
 
     @CustomShadowVariable(variableListenerClass = VehicleUpdatingVariableListener.class,
-            sources = {@PlanningVariableReference(variableName = "prevAction")})
+            sources = {@PlanningVariableReference(variableName = "previousStandstill")})
     public Vehicle getVehicle() {
         return vehicle;
     }
@@ -1132,8 +1132,8 @@ public class VehicleUpdatingVariableListener implements VariableListener<Custome
     ...
 
     protected void updateVehicle(ScoreDirector scoreDirector, Customer sourceCustomer) {
-        Standstill prevAction = sourceCustomer.getPreviousStandstill();
-        Vehicle vehicle = prevAction == null ? null : prevAction.getVehicle();
+        Standstill previousStandstill = sourceCustomer.getPreviousStandstill();
+        Vehicle vehicle = previousStandstill == null ? null : previousStandstill.getVehicle();
         Customer shadowCustomer = sourceCustomer;
         while (shadowCustomer != null && shadowCustomer.getVehicle() != vehicle) {
             scoreDirector.beforeVariableChanged(shadowCustomer, "vehicle");
@@ -1163,11 +1163,11 @@ If one `VariableListener` changes two shadow variables (because having two separ
 ----
     @PlanningVariable(...)
     public Standstill getPreviousStandstill() {
-        return prevAction;
+        return previousStandstill;
     }
 
     @CustomShadowVariable(variableListenerClass = TransportTimeAndCapacityUpdatingVariableListener.class,
-            sources = {@PlanningVariableReference(variableName = "prevAction")})
+            sources = {@PlanningVariableReference(variableName = "previousStandstill")})
     public Integer getTransportTime() {
         return transportTime;
     }

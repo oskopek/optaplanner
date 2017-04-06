@@ -208,7 +208,7 @@ public class TspWorldPanel extends JPanel {
         g.drawString("Domicile", 15, (int) height - 10 - TEXT_SIZE);
         g.setColor(TangoColorFactory.PLUM_2);
         g.fillRect(6, (int) height - 9, 3, 3);
-        g.drawString("Action", 15, (int) height - 5);
+        g.drawString("Visit", 15, (int) height - 5);
         g.setColor(TangoColorFactory.ALUMINIUM_5);
         String locationsSizeString = tspSolution.getLocationList().size() + " locations";
         g.drawString(locationsSizeString,

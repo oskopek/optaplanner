@@ -4909,7 +4909,7 @@
     <id>1</id>
     <location class="TspAirLocation" reference="3"/>
   </domicile>
-  <actionList id="984">
+  <visitList id="984">
     <Visit id="985">
       <id>2</id>
       <location class="TspAirLocation" reference="4"/>
@@ -8826,5 +8826,5 @@
       <id>980</id>
       <location class="TspAirLocation" reference="982"/>
     </Visit>
-  </actionList>
+  </visitList>
 </TspSolution>
