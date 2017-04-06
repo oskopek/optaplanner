@@ -20,10 +20,7 @@ import org.optaplanner.examples.common.persistence.AbstractTxtSolutionImporter;
 import org.optaplanner.examples.transport.domain.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class TransportImporter extends AbstractTxtSolutionImporter<TransportSolution> {
 
@@ -125,7 +122,7 @@ public class TransportImporter extends AbstractTxtSolutionImporter<TransportSolu
             readConstantLine("EOF");
 
             solution.setLocationList(locs);
-            solution.setNoop(new Noop());
+            solution.setNoop(Collections.singletonList(new Noop()));
             solution.getNoop().get(0).setId(id++);
             solution.setVehList(vehs);
             solution.setPkgList(pkgs);
@@ -179,6 +176,7 @@ public class TransportImporter extends AbstractTxtSolutionImporter<TransportSolu
             }
 
             solution.setActionAllocationList(allocations);
+            solution.setConstants(new Constants(id++, planLength - 1));
         }
 
     }

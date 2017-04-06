@@ -13,6 +13,7 @@ public class Veh extends AbstractPersistable {
     private String name;
     private int index;
     private int maxCap;
+    private Integer cap;
     private Loc loc;
 
     public String getName() {
@@ -37,6 +38,15 @@ public class Veh extends AbstractPersistable {
 
     public void setMaxCap(int maxCap) {
         this.maxCap = maxCap;
+    }
+
+    @PlanningVariable(valueRangeProviderRefs = "posints")
+    public Integer getCap() {
+        return cap;
+    }
+
+    public void setCap(Integer cap) {
+        this.cap = cap;
     }
 
     @PlanningVariable(valueRangeProviderRefs = "locs")

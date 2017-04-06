@@ -23,6 +23,8 @@ import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.drools.ProblemFactCollectionProperty;
 import org.optaplanner.core.api.domain.solution.drools.ProblemFactProperty;
+import org.optaplanner.core.api.domain.valuerange.ValueRange;
+import org.optaplanner.core.api.domain.valuerange.ValueRangeFactory;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
@@ -42,7 +44,8 @@ public class TransportSolution extends AbstractPersistable {
     private List<Drive> driveList;
     private List<Pickup> pickupList;
     private List<Drop> dropList;
-    private Noop noop;
+    private List<Noop> noop;
+    private Constants constants;
 
     private List<ActionAllocation> actionAllocationList;
 
@@ -67,14 +70,23 @@ public class TransportSolution extends AbstractPersistable {
         this.locationList = locationList;
     }
 
+    public void setNoop(List<Noop> noop) {
+        this.noop = noop;
+    }
+
+    @ProblemFactProperty
+    public Constants getConstants() {
+        return constants;
+    }
+
+    public void setConstants(Constants constants) {
+        this.constants = constants;
+    }
+
     @ProblemFactProperty
     @ValueRangeProvider(id = "noop")
     public List<Noop> getNoop() {
-        return Collections.singletonList(noop);
-    }
-
-    public void setNoop(Noop noop) {
-        this.noop = noop;
+        return noop;
     }
 
     @PlanningEntityCollectionProperty
@@ -118,6 +130,7 @@ public class TransportSolution extends AbstractPersistable {
     }
 
     @PlanningEntityCollectionProperty
+    @ValueRangeProvider(id = "vehs")
     public List<Veh> getVehList() {
         return vehList;
     }
@@ -143,6 +156,9 @@ public class TransportSolution extends AbstractPersistable {
     public void setScore(HardSoftLongScore score) {
         this.score = score;
     }
+
+    @ValueRangeProvider(id = "posints")
+    public final ValueRange<Integer> posints = ValueRangeFactory.createIntValueRange(0, Integer.MAX_VALUE);
 
     // ************************************************************************
     // Complex methods

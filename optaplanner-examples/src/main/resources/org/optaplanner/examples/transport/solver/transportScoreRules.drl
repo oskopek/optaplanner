@@ -2,12 +2,12 @@
  * Copyright 2011 Red Hat, Inc. and/or its affiliates.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use this file except inVeh compliance with the License.
  * You may obtain a copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
+ * Unless required by applicable law or agreed to inVeh writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
@@ -30,15 +30,76 @@ rule "actionAllocationNotFilled"
         scoreHolder.addHardConstraintMatch(kcontext, -1);
 end
 
-//rule "driveNotApplicable"
-//    when
-//        $veh : Veh($index: index),
-//        $action : Drive($veh == veh, $loc : loc, $target : target),
-//        $actionAllocation : ActionAllocation(index == $index, $prevActionAllocation : prevActionAllocation, $prevActionAllocation != null, $action : actionn)
-//
-//    then
-//        scoreHolder.addHardConstraintMatch(kcontext, -1);
-//end
+rule "goalNotMet"
+    when
+        Constants($lastActionIndex : lastActionIndex)
+        $pkg : Pkg(index == $lastActionIndex, loc != target)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidDriveEffect"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Drive($action.id == id, $veh : veh, $newLoc : target) // there are only valid drives available inVeh domain
+        Veh($veh.id == id, $index + 1 == index, $newLoc != loc)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidDrivePrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Drive($action.id == id, $veh : veh, $oldLoc : location) // there are only valid drives available inVeh domain
+        Veh($veh.id == id, $index == index, $oldLoc != loc)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidPickupCapacityPrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Pickup($action.id == id, $veh : veh, $pkg : pkg)
+        Veh($veh.id == id, $index == index, cap < $pkg.size)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidPickupVehLocPrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Pickup($action.id == id, $veh : veh, $loc : location)
+        Veh($veh.id == id, $index == index, $loc != loc)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidPickupPkgLocPrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Pickup($action.id == id, $pkg : pkg, $loc : location)
+        Pkg($pkg.id == id, $index == index, $loc != loc)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidDropVehLocPrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Drop($action.id == id, $veh : veh, $loc : location)
+        Veh($veh.id == id, $index == index, $loc != loc)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+rule "invalidDropPkgLocPrecond"
+    when
+        ActionAllocation($index : index,  $action : actionn, actionn != null)
+        Drop($action.id == id, $pkg : pkg, $veh : veh)
+        Pkg($pkg.id == id, $index == index, $veh != inVeh)
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
 
 // ############################################################################
 // Soft constraints

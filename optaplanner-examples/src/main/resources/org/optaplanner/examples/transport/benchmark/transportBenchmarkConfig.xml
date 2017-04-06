@@ -12,7 +12,7 @@
       <!--<problemStatisticType>SCORE_CALCULATION_SPEED</problemStatisticType>-->
       <!--<problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>-->
       <!--<problemStatisticType>MOVE_COUNT_PER_STEP</problemStatisticType>-->
-      <!--<problemStatisticType>MEMORY_USE</problemStatisticType>-->
+      <!--&lt;!&ndash;<problemStatisticType>MEMORY_USE</problemStatisticType>&ndash;&gt;-->
       <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_BEST_SCORE</singleStatisticType>-->
       <!--<singleStatisticType>CONSTRAINT_MATCH_TOTAL_STEP_SCORE</singleStatisticType>-->
       <!--<singleStatisticType>PICKED_MOVE_TYPE_BEST_SCORE_DIFF</singleStatisticType>-->
